@@ -24,3 +24,7 @@ The contact page uses Netlify Forms (`data-netlify="true"`) and redirects succes
 
 ## Homepage hero
 The homepage uses the approved colorful five-clinician image (`/assets/hero-colorful.webp`) while retaining the brand-guide-aligned navy/teal UI system.
+
+## v5 visual adjustment
+- Header logo increased to 310px wide on desktop and 230px on mobile.
+- No other content or layout changes from the brand-guide-aligned color-hero build.
