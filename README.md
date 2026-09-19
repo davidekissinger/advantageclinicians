@@ -21,3 +21,6 @@ The contact page uses Netlify Forms (`data-netlify="true"`) and redirects succes
 4. Confirm HTTPS certificate is active for advantageclinicians.com.
 5. Confirm www redirects to the primary domain.
 6. Review Privacy Policy and Terms of Use with counsel when practical, especially before adding a job board, applicant tracking, analytics, advertising, or employment application workflow.
+
+## Homepage hero
+The homepage uses the approved colorful five-clinician image (`/assets/hero-colorful.webp`) while retaining the brand-guide-aligned navy/teal UI system.
