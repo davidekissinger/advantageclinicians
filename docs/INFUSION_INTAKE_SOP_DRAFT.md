@@ -62,3 +62,18 @@ There is **no automated retention enforcement** implemented in this version; man
 - [ ] PR marked ready and merged **only after** these approvals.
 
 **The public website and the clinical operations platform have separate release decisions.**
+
+## Ohio home-infusion intake protocol — October 23, 2026
+The user clarified that existing infusion care occurs **in patients’ homes within Ohio**. The public website is narrowed to exploratory RN staffing relationships for Ohio home-infusion programs. This clarification does not independently establish which agency presently delivers the clinical care, who employs RNs, or whether Advantage Clinicians holds Ohio home-health licensing or has coverage capacity.
+
+The partner intake now accepts only a fixed Home care setting, Ohio county-level geography and structured business data; its optional narrative field is replaced with a blank hidden legacy field to reduce accidental PHI. The RN form asks for self-reported possible Ohio RN practice authorization and county preferences. Neither form verifies clinician competence or licensing.
+
+Ohio Revised Code §§3740.01–3740.02 govern skilled home-health providers and restrictions on holding out. Section 3740.01's employee definition includes individuals referred to a home-health agency by an employment service; exact staffing/provider responsibilities require counsel review. The Ohio Board of Nursing also explains relevant multistate license privileges and employer reporting responsibilities.
+
+References:
+- https://codes.ohio.gov/ohio-revised-code/section-3740.01
+- https://codes.ohio.gov/ohio-revised-code/section-3740.02
+- https://nursing.ohio.gov/licensing-and-certification/multistate-licensure
+- https://nursing.ohio.gov/licensing-and-certification/multistate-licensure/employer-information
+
+**This change is not public-launch authorization or authorization to perform clinical services.**

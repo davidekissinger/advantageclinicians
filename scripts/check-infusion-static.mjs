@@ -60,6 +60,21 @@ for (const [file, name, consent] of [
   if (!new RegExp('<input[^>]*name="' + consent + '"[^>]*required').test(markup))
     errors.push(file + ": contact consent must be required");
 }
+// Scope-specific invariants for Ohio home-infusion inquiry paths.
+const partnerForm = read("specialty-infusion-nursing/request-coverage/index.html");
+if (!partnerForm.includes('name="care_setting" type="text" value="Home" readonly'))
+  errors.push("Home setting must be fixed in partner form");
+if (partnerForm.includes("<option>Ambulatory infusion</option>") || partnerForm.includes("<option>Mixed settings</option>"))
+  errors.push("Out-of-scope partner care setting available");
+if (partnerForm.includes('<textarea id="partner-message"'))
+  errors.push("Public partner narrative textarea must not be available");
+if (!partnerForm.includes("Ohio counties or metro areas"))
+  errors.push("Partner form needs Ohio-specific geography");
+const rnForm = read("specialty-infusion-nursing/join-network/index.html");
+if (!rnForm.includes('name="ohio_practice_status" required'))
+  errors.push("RN form must ask self-reported Ohio practice status");
+if (!rnForm.includes("Ohio counties or metro areas"))
+  errors.push("RN form must identify Ohio home-visit regions");
 const sitemap = read("sitemap.xml");
 for (const url of ["specialty-infusion-nursing/", "specialty-infusion-nursing/partners/", "specialty-infusion-nursing/clinicians/"]) {
   if (!sitemap.includes("<loc>https://advantageclinicians.com/" + url + "</loc>"))

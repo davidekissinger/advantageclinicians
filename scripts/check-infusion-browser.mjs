@@ -115,7 +115,8 @@ try {
         await p.locator("#partner-org").fill("Fictitious Pharmacy");
         await p.locator("#partner-type").selectOption("Specialty pharmacy");
         await p.locator("#partner-region").fill("Lucas County, Ohio");
-        await p.locator("#partner-setting").selectOption("Home");
+        assert.equal(await p.locator("#partner-setting").inputValue(), "Home");
+        assert((await p.locator("#partner-setting").getAttribute("readonly")) !== null, "Home setting must be read-only");
         await p.locator("#partner-timing").selectOption("Exploratory planning");
         await p.locator('[name="business_contact_consent"]').check();
       }
@@ -129,6 +130,7 @@ try {
         await p.locator("#rn-license").selectOption("RN");
         await p.locator("#rn-years").selectOption("1–3 years");
         await p.locator("#rn-license-states").fill("Ohio");
+        await p.locator("#rn-ohio-practice").selectOption("Ohio RN license");
         await p.locator("#rn-regions").fill("Toledo, Ohio");
         await p.locator('[name="consent_to_contact"]').check();
       }

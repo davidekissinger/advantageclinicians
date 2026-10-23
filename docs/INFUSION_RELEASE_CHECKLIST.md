@@ -57,7 +57,7 @@ Keep the main branch and current production deploy as known-good. If a later pro
 - [ ] A human reviewer must still inspect screenshot artifacts or protected live preview for design quality.
 - [ ] Form thank-you redirect and outbound notification delivery remain unverified by the form submission count.
 - [ ] Do not self-approve the legal/clinical claims or privacy operating SOP; retain draft PR until explicit approval.
-- [ ] Partner inquiry includes an optional free-text field. It is **not PHI-safe**; a person could misuse it. Decide whether to remove this field before launch or use an approved secure intake.
+- [x] Partner optional public narrative field removed for the revised Ohio-home scope; remaining fields still require PHI-misdirection safeguards.
 - [ ] Name the authorized business intake reviewer and restrict Netlify Forms team access to that role.
 - [ ] Adopt documented retention/deletion, marketing-consent and inappropriate-PHI incident handling processes.
 - [ ] Review whether any new public service/coverage language could be interpreted as holding out as a skilled home-health provider under Ohio Revised Code §3740.02. A staffing-only model must be verified with qualified counsel before production.
@@ -71,3 +71,11 @@ Keep the main branch and current production deploy as known-good. If a later pro
 - [ ] Owner, privacy and legal/claims approvals not yet provided.
 
 Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `docs/INFUSION_INTAKE_SOP_DRAFT.md`.
+## Ohio home-infusion scope and retesting
+- [x] Initial partner inquiry restricted to patients' homes within Ohio, organized by county/metro.
+- [x] Ambulatory and facility selections removed from partner form.
+- [x] RN form includes self-reported eligibility to practice in Ohio; no primary-source verification implied.
+- [x] Partner optional narrative textarea removed; hidden legacy form field retained.
+- [ ] Run static and browser validation after these form and page changes.
+- [ ] Verify Ohio home-health agency/clinical-provider and employer relationship with qualified counsel before any service or licensure claim.
+- [ ] Approve updated privacy disclosures, intake ownership and retention safeguards before merging.
