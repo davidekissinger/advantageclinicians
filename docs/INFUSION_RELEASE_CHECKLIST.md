@@ -4,10 +4,10 @@
 
 ## Verification record — 2026-10-23
 - Netlify Deploy Preview PR #1: **ready** (deploy `6adb7df9cce581c333301fb5`).
-- Netlify site-level form registration: `infusion-partner-inquiry`, `infusion-clinician-interest` detected; neither has a submission.
+- Netlify site-level form registration: `infusion-partner-inquiry`, `infusion-clinician-interest` detected; subsequent test entries are documented below.
 - Static branch link and asset inventory: 15 HTML pages, no unresolved local routes in connector-based validation.
 - Production deploy remains `6aaeea9896f1429124d585ea`, unchanged.
-- **Not verified:** successful test POST/redirect, visual/mobile review or legal/claims/privacy approval. Pending human release gates.
+- **Not verified at that initial record:** successful test POST/redirect or legal/claims/privacy approval. See later evidence in readiness review.
 - Repeatable CI test: `node scripts/check-infusion-static.mjs` on PR and manually.
 
 ## Static smoke checks (automatable)
@@ -61,3 +61,13 @@ Keep the main branch and current production deploy as known-good. If a later pro
 - [ ] Name the authorized business intake reviewer and restrict Netlify Forms team access to that role.
 - [ ] Adopt documented retention/deletion, marketing-consent and inappropriate-PHI incident handling processes.
 - [ ] Review whether any new public service/coverage language could be interpreted as holding out as a skilled home-health provider under Ohio Revised Code §3740.02. A staffing-only model must be verified with qualified counsel before production.
+
+## Latest browser QA evidence
+- [x] 12 browser route checks, 30 responsive viewport cases, 2 form validity cases, 1 mobile navigation case.
+- [x] 12 automated WCAG 2.1 A/AA scans with zero detected violations.
+- [x] Reviewed six desktop/mobile screenshots of the hub and two forms.
+- [x] Both forms registered and each received one test submission.
+- [ ] Browser redirect after real Netlify POST and email notification delivery not independently confirmed.
+- [ ] Owner, privacy and legal/claims approvals not yet provided.
+
+Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `docs/INFUSION_INTAKE_SOP_DRAFT.md`.
