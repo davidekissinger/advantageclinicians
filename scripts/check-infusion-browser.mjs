@@ -43,7 +43,9 @@ try {
   }
   assert(ready, "Static HTTP test server did not start");
   browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
+  // Axe requires an explicit BrowserContext rather than browser.newPage().
+  const context = await browser.newContext();
+  const page = await context.newPage();
   page.on("pageerror", error => fail("browser script error", error.message));
 
   // Route smoke test: use the local static site (no protected Netlify preview bypass).
