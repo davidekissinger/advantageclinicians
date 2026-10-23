@@ -2,6 +2,14 @@
 
 **Branch:** `feature/specialty-infusion-v1` — do not merge into `main` until website and compliance approvals are documented.
 
+## Verification record — 2026-10-23
+- Netlify Deploy Preview PR #1: **ready** (deploy `6adb7df9cce581c333301fb5`).
+- Netlify site-level form registration: `infusion-partner-inquiry`, `infusion-clinician-interest` detected; neither has a submission.
+- Static branch link and asset inventory: 15 HTML pages, no unresolved local routes in connector-based validation.
+- Production deploy remains `6aaeea9896f1429124d585ea`, unchanged.
+- **Not verified:** successful test POST/redirect, visual/mobile review or legal/claims/privacy approval. Pending human release gates.
+- Repeatable CI test: `node scripts/check-infusion-static.mjs` on PR and manually.
+
 ## Static smoke checks (automatable)
 - [ ] New URLs resolve in a Netlify Deploy Preview (not just GitHub).
 - [ ] Existing homepage, organization, clinician, contact, legal and thank-you routes still work.
