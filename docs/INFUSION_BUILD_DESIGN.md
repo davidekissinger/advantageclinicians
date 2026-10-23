@@ -1,0 +1,38 @@
+# Specialty Infusion Nursing — Implementation Baseline
+
+Status: v1 **exploratory informational MVP** on branch `feature/specialty-infusion-v1` — October 23, 2026.
+
+## Goal and boundaries
+- Home for the service line: Advantage Clinicians; Good Stick remains mobile specimen collection and is not modified.
+- B2B conversation between specialty pharmacies/infusion organizations and the potential RN network.
+- Two non-PHI Netlify Forms. No patient intake, no clinical referral, no orders, no automated matching, no employment offers, no assignment guarantees.
+- Northwest Ohio is a **hypothesis** for initial exploration only; not an assertion of coverage.
+- No Supabase or authenticated CRM in v1.
+
+## Pages
+- `/specialty-infusion-nursing/`: hub, paths, workflow and public limitations.
+- `/specialty-infusion-nursing/partners/`: organizational value and intake CTA.
+- `/specialty-infusion-nursing/clinicians/`: professional interest and screening context.
+- `/specialty-infusion-nursing/request-coverage/`: `infusion-partner-inquiry`.
+- `/specialty-infusion-nursing/join-network/`: `infusion-clinician-interest`.
+- `/specialty-infusion-nursing/thank-you/`: generic acknowledgement; never echo submitted data.
+
+## Processing and responsible-use constraints
+- Marketing forms reject no PHI automatically. Strong visible warnings, limited fields, required attestations and human review reduce but do not eliminate the risk of inappropriate submissions.
+- Any accidental PHI requires the organization's approved secure incident process, not ordinary email forwarding.
+- Inbound leads should be assigned to a named reviewer with restricted permissions and an approved retention/deletion schedule.
+- Self-reported RN licensure is *not* primary-source verification.
+- Any operational fulfillment requires an independently defined legal entity, state-specific licensure analysis, accountable clinical supervision, competent practitioners, insurance, contracts, policies and secure clinical systems.
+- Legal/claims review and privacy approval are **mandatory gates** to merging a public intake feature.
+
+## Design and deployment
+- Reuse existing Montserrat, Source Sans 3, navy `#0B3A78`, teal `#1DA5B8`, and logo.
+- Static HTML, CSS; new navigation item and discoverability sections on existing audience paths.
+- Deploy GitHub pull request to Netlify preview; preview is not production approval.
+- Release checklist: `docs/INFUSION_RELEASE_CHECKLIST.md`.
+
+## Deferred design
+- Controlled staff CRM / Supabase after validated business demand, with strict access, retention, audit and RLS.
+- Credential verification, provider matchmaking and assignment/care-documentation are **not implemented** in this build.
+
+Source baseline: Advantage Clinicians Infusion Nursing Design & Build Structure v1.0, October 23, 2026.

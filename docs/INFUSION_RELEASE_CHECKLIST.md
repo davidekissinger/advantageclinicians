@@ -1,0 +1,41 @@
+# Specialty Infusion Nursing — Preview, QA and Release Gates
+
+**Branch:** `feature/specialty-infusion-v1` — do not merge into `main` until website and compliance approvals are documented.
+
+## Static smoke checks (automatable)
+- [ ] New URLs resolve in a Netlify Deploy Preview (not just GitHub).
+- [ ] Existing homepage, organization, clinician, contact, legal and thank-you routes still work.
+- [ ] New and old navigation, footer and cards link correctly with mobile menu.
+- [ ] Assets, canonical metadata, sitemap, title/description and social image links resolve.
+- [ ] Keyboard-only nav/form use, labels, required consent and focus-visible states work.
+- [ ] Mobile widths 360, 390, 768, 1024, 1440px checked; no overflow; reduced-motion honored.
+- [ ] No patient/clinical fields, uploads, credentials or PHI anywhere in forms.
+- [ ] Form names are unique and `form-name` matches the form; `data-netlify="true"` present.
+- [ ] Safe honeypot, required-field validation and generic thank-you action are functional.
+
+## Netlify preview verification (human or authorized tester)
+- [ ] PR Deploy Preview has status **ready** and accessible to authorized reviewer; staging access may require team login.
+- [ ] Forms visible/detected: `infusion-partner-inquiry` and `infusion-clinician-interest`.
+- [ ] Submit **fabricated non-patient** test leads to both forms, with test consent.
+- [ ] Confirm exactly the intended fields, no attachments, and separate form identities.
+- [ ] Confirm submissions are available to an authorized reviewer; define notification policy.
+- [ ] Verify each success redirects to `/specialty-infusion-nursing/thank-you/`.
+- [ ] Test keyboard and touch interaction, accessibility, layout and SEO.
+
+## Required approvals BEFORE production merge
+- [ ] **S4 Privacy/data:** Named owner and responder, restricted form access, consent/retention policy, PHI-misrouting incident procedure, privacy policy approved.
+- [ ] **S7 Claims/content:** Confirm each public geographic/therapy/availability claim is appropriate; no implied coverage, licensure, certified capability, immediate RN placement or offers.
+- [ ] Business operator accepts the service-line language and partner/RN pathways.
+- [ ] Legal/compliance professional reviews applicable website and staffing recruitment representations.
+- [ ] Approval and reviewer evidence entered in PR; planned rollback recorded.
+
+## Separate operational gates BEFORE actual clinical coverage
+- [ ] **S1:** Contracting identity; whether staffing placement vs licensed skilled care; Ohio and other state licensure legal determination.
+- [ ] **S2:** Clinical leadership and responsibility for orders, protocols, documentation, supervision and adverse-event escalation.
+- [ ] **S3:** RN primary-source license checks; competencies; other screenings; insurance and classification.
+- [ ] **S5:** Approved partner contracts, liability, scope and cancellations.
+- [ ] **S6 if PHI:** Appropriate BAAs, HIPAA security risk analysis, secure systems and incident controls.
+- [ ] Written final go-live authorization; this website by itself is not such authorization.
+
+## Rollback
+Keep the main branch and current production deploy as known-good. If a later production release fails, republish the last known-good Netlify deploy or revert its merge commit; confirm forms/site behavior. Never roll back by removing stored lead records without the records retention process.
