@@ -91,3 +91,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:1050px){.infusion-hero-grid,.infusion-feature-grid,.infusion-form-layout{grid-template-columns:1fr}.infusion-hero-art{min-height:390px}.infusion-form-intro{position:static}}
 @media(max-width:700px){.infusion-hero{padding-bottom:35px}.infusion-hero-content{padding:10px 0}.infusion-hero-art{min-height:315px}.infusion-art-core{width:175px;height:175px}.infusion-art-core strong{font-size:1.18rem}.infusion-art-node{padding:9px}.infusion-node-a{top:15px;left:10px}.infusion-node-b{bottom:15px;right:10px}.infusion-audience-grid,.infusion-steps,.infusion-check-grid,.infusion-service-cards{grid-template-columns:1fr}.infusion-audience-card{padding:26px}.infusion-feature-panel{padding:25px}.infusion-conversion,.infusion-discovery-inner{display:block}.infusion-conversion{padding:28px}.infusion-discovery-inner .btn,.infusion-conversion .btn{margin-top:17px;width:100%}.infusion-form{padding:23px}.infusion-subhero{padding-bottom:42px}.infusion-form .field-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.infusion-audience-card{transition:none!important}}
+
+/* Release review: contrast and focus improvements for the infusion service line */
+.infusion-site .eyebrow {color:#065d72}
+.infusion-site .infusion-card-label {color:#06677e}
+.infusion-site .infusion-step-number {color:#056a80}
+.infusion-site .infusion-optional {color:#475e73}
+.infusion-site summary:focus-visible,.infusion-audience-card:focus-visible {
+  outline:3px solid #085d83;outline-offset:4px;
+}
+.infusion-site .infusion-faq details[open] summary {margin-bottom:2px}
+@media (max-width:700px) {
+  .infusion-site .infusion-faq details {padding:0 16px}
+}

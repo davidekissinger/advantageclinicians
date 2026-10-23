@@ -47,3 +47,17 @@
 
 ## Rollback
 Keep the main branch and current production deploy as known-good. If a later production release fails, republish the last known-good Netlify deploy or revert its merge commit; confirm forms/site behavior. Never roll back by removing stored lead records without the records retention process.
+
+## Release review addendum — October 23, 2026
+- [x] Two forms registered and received one submission each, as reported by Netlify:
+  - `infusion-partner-inquiry`: Oct 23, 3:29 PM Eastern
+  - `infusion-clinician-interest`: Oct 23, 3:31 PM Eastern
+- [x] Preview deployed and GitHub static validation green at earlier commit.
+- [ ] Confirm responsive browser QA / WCAG audit results on the latest commit (`browser-qa` GitHub Action).
+- [ ] A human reviewer must still inspect screenshot artifacts or protected live preview for design quality.
+- [ ] Form thank-you redirect and outbound notification delivery remain unverified by the form submission count.
+- [ ] Do not self-approve the legal/clinical claims or privacy operating SOP; retain draft PR until explicit approval.
+- [ ] Partner inquiry includes an optional free-text field. It is **not PHI-safe**; a person could misuse it. Decide whether to remove this field before launch or use an approved secure intake.
+- [ ] Name the authorized business intake reviewer and restrict Netlify Forms team access to that role.
+- [ ] Adopt documented retention/deletion, marketing-consent and inappropriate-PHI incident handling processes.
+- [ ] Review whether any new public service/coverage language could be interpreted as holding out as a skilled home-health provider under Ohio Revised Code §3740.02. A staffing-only model must be verified with qualified counsel before production.

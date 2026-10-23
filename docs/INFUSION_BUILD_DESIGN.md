@@ -36,3 +36,11 @@ Status: v1 **exploratory informational MVP** on branch `feature/specialty-infusi
 - Credential verification, provider matchmaking and assignment/care-documentation are **not implemented** in this build.
 
 Source baseline: Advantage Clinicians Infusion Nursing Design & Build Structure v1.0, October 23, 2026.
+
+## Legal-model review references (not a licensure determination)
+- Ohio Revised Code, Chapter 3740 / §3740.01 definitions: https://codes.ohio.gov/ohio-revised-code/chapter-3740
+- Ohio Revised Code, §3740.02 licensure and restrictions on holding out as a skilled home health provider: https://codes.ohio.gov/ohio-revised-code/section-3740.02
+- Ohio Department of Health home health agency licensure: https://odh.ohio.gov/know-our-programs/home-health-agencies/home-health-agency-licensure/home-health-agency-licensure
+- HHS business associate guidance, applicable only if a covered-entity/business-associate relationship and PHI access exists: https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html
+
+**Decision:** This build is a prospective B2B staffing **discussion** and RN interest registration, not an operational infusion nursing offering. A clinician's interest submission does not verify a license or competency. No agency licensure has been established by this build.
