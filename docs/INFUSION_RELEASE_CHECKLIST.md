@@ -13,8 +13,9 @@ This matrix supersedes unchecked items in historical sections below. The later s
 | Latest website QA | Website commit `9504887`: 57 browser checks, 12 accessibility scans, zero failures. Documentation correction `5c28a36`, workflow [40082057569](https://github.com/davidekissinger/advantageclinicians/actions/runs/40082057569): static and browser jobs successful | PASS; see current PR CI for later documentation-only evidence commit |
 | Form registration and historical receipt | Oct 24 connector inventory after live preview tests: partner and RN forms each have two recorded submissions; Home/Ohio fields and separate identities preserved | VERIFIED |
 | Current protected preview and real POST redirect | Authenticated preview `6adc7a20bc196545b7af4823` for `5c28a36` is ready. Both fabricated non-patient submissions redirected to `/specialty-infusion-nursing/thank-you/` and were recorded | PASS |
-| Notifications and access | Signed-in dashboard: no submission notifications configured; one team member and zero reviewers. No settings or membership changed | VERIFIED CURRENT STATE; owner must select intake workflow |
-| Intake/privacy operating choices | Assign owner/backup/privacy responder; approve retention, access/export and incident procedure | OWNER DECISION / IMPLEMENTATION |
+| Notifications and access | Signed-in dashboard: no submission notifications configured; one team member and zero reviewers. David approved dashboard-only review of both forms, no email alerts; existing settings already match. No settings or membership changed | APPROVED / CONFIGURATION MATCHES |
+| Retention | David approved 30-day tests, 90-day unqualified contacts, annual qualified-interest review; manual procedure and current test deadlines recorded in SOP | APPROVED; NO AUTOMATIC DELETION |
+| Remaining privacy controls | Finalize privacy escalation and access/export/incident procedure; David-only intake does not appoint a separate backup or grant new access | OPEN |
 | Public claims / service arrangement | Final wording and actual employer/provider arrangement reviewed; applicable legal/compliance decision recorded | OPEN |
 | Deployment capacity | Netlify dashboard reports production deploys paused by team credit/plan limits; existing published sites remain live. No purchase or plan change made | EXTERNAL BLOCKER; owner action |
 | Production | Connector reports published deploy `6aaeea9896f1429124d585ea`; no merge or production publish performed | UNCHANGED |
@@ -111,4 +112,12 @@ See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified stat
 - Team membership inventory showed a single owner member and no reviewers. This verifies membership, not a complete audit of sessions, integrations, exports or account security. No access changes were made.
 - Production deploy remains `6aaeea9896f1429124d585ea`. Netlify reports a team-level production-deploy pause; resolving billing/credit capacity is separate from code readiness and requires the owner. No spending, upgrade, auto-recharge or production deployment was performed.
 
-Remaining decisions: intake owner/backup/privacy responder; dashboard vs notification workflow; retention and misdirected-data procedure; exact public claims and applicable staffing/provider review; production capacity and explicit release authorization.
+Remaining after the owner decisions below: privacy escalation/access/export/incident procedure; exact public claims and applicable staffing/provider review; production capacity and explicit release authorization.
+
+## Owner approvals recorded — October 24, 2026
+- [x] David reviews both forms through the dashboard; no email alerts. Existing notification settings match this choice.
+- [x] Retention: tests within 30 days; unqualified contacts within 90 days; qualified interest reviewed annually.
+- [x] Manual disposition procedure and existing test deadlines recorded in `INFUSION_INTAKE_SOP_DRAFT.md`; no deletion automation claimed or implemented.
+- [ ] Remaining privacy/claims/compliance and production release decisions complete.
+
+These approvals do not authorize spending, new access, merge or publication.

@@ -1,7 +1,9 @@
-# Infusion Nursing: Draft Intake, Privacy and Retention SOP
+# Infusion Nursing: Intake, Privacy and Retention SOP
 
-**Status:** PROPOSED — approval and operational implementation required before production launch.  
-**Owner:** To be designated by site operator.  
+**Status:** Intake routing and retention schedule APPROVED by David Kissinger on October 24, 2026; remaining privacy/incident and release decisions are open.
+
+**Intake owner:** David Kissinger, sole reviewer of both forms through the authenticated Netlify dashboard; no email alerts. No backup or additional access is designated by this approval.
+
 **Applies to:** `infusion-partner-inquiry`, `infusion-clinician-interest`, and any related non-PHI business correspondence.
 
 ## 1. Purpose and role boundaries
@@ -10,12 +12,12 @@
 - An interest form is not a credentialing, employment, or clinical onboarding process.
 - Public form submissions do not establish client service agreements, nursing assignment availability, or permission to deliver skilled home-health care.
 
-## 2. Proposed people and permissions
+## 2. Approved intake roles and remaining assignments
 | Role | Duty | Assignment |
 | --- | --- | --- |
-| Business intake owner | Reviews partner requests and determines business fit | Unassigned; operator approval required |
-| RN interest intake reviewer | Reviews limited self-reported interest and determines whether further screening is warranted | Unassigned |
-| Netlify site administrator | Controls site/Form access, audit, spam queue, and configuration | Confirm current authorized team members |
+| Business intake owner | Reviews partner requests and determines business fit | David Kissinger — approved October 24, 2026 |
+| RN interest intake reviewer | Reviews limited self-reported interest and determines whether further screening is warranted | David Kissinger — approved October 24, 2026 |
+| Netlify site administrator | Controls site/Form access, audit, spam queue, and configuration | Dashboard inventory showed David as sole owner member; no additional access granted |
 | Privacy escalation contact | Handles mistakenly received sensitive information | Unassigned; designate before launch |
 | Release approver | Signs off on staffing/clinical claims and reviewed privacy policy | Unassigned; independent legal/compliance review required |
 
@@ -37,26 +39,29 @@ Public forms use warnings and a submitter attestation, **not** automated PHI det
 5. Do not delete or export sensitive records ad hoc, without incident documentation and counsel-approved handling.
 
 ## 5. Notifications and recordkeeping
-- Proposed new-submission email alerts: business metadata only (form type and submission reference), with access through Netlify login; avoid including raw submissions in email.
+- **Approved initial routing:** David reviews both forms in the authenticated Netlify dashboard. No email alerts, new webhooks or automatic forwarding. Dashboard inspection found no configured submission notifications, so the selected setup requires no settings mutation.
+- A future notification destination or integration requires a separate owner decision and payload/privacy review. Do not infer an alert address from the account email.
 - Keep clinical and credential documents **out** of Netlify Forms.
 - Do not automatically mirror form submissions into public repositories, analytics, or unapproved workspaces.
 - If a CRM is later required, re-evaluate consent, segregation, access controls and integration logging before syncing any records.
 - Responding staff should have a clear rule for when an inquiry is closed, transferred to approved operational systems, or deleted.
 
-## 6. Proposed retention policy for approval
-These are **working proposals, not current platform settings**:
-- Test records: remove within **30 days** after QA sign-off, unless legal hold applies.
+## 6. Approved retention schedule — October 24, 2026
+David explicitly approved these periods in the task conversation. This is a manual operating policy, not an automatic platform retention setting:
+- Test records: remove within **30 days**; use receipt dates as the conservative start for the existing test entries, unless legal hold applies.
 - Spam/duplicate/unqualified contacts: review and delete within **90 days**.
 - Qualified, consented business/RN interest records: review at least annually, and delete when no longer needed, subject to legal requirements.
-- Record the chosen retention schedule, who runs it, and how completion is documented. Verify any data held in notifications or downstream exports.
+- David is the intake reviewer responsible for manual disposition. At each review, check due records and record completion with minimal metadata (form, submission reference, receipt date, classification, disposition date, reason). Verify any downstream exports/copies; none are authorized by the dashboard-only selection.
 
 There is **no automated retention enforcement** implemented in this version; manual scheduled review is required until approved automation exists.
 
-## 7. Go-live signatures (not yet approved)
+## 7. Approval checklist (partially approved)
 - [ ] Business model: staffing-only claims are supported.
-- [ ] Privacy owner, site access reviewers and backup named.
+- [ ] Privacy escalation and access/export procedure approved; sole-reviewer continuity documented.
 - [ ] Privacy policy matches form fields and notifications.
-- [ ] Retention and incident process approved.
+- [x] David approved dashboard-only review of both forms, with no email alerts, on October 24, 2026.
+- [x] David approved 30-day test / 90-day unqualified / annual qualified-record review on October 24, 2026.
+- [ ] Incident/privacy escalation process and remaining release decisions approved.
 - [ ] Public claims/legal review documented, including Ohio Chapter 3740 applicability.
 - [ ] Final preview, submit/redirect tests and rollback reviewed.
 - [ ] PR marked ready and merged **only after** these approvals.
@@ -84,13 +89,23 @@ See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified stat
 
 Before an introduction, verify the contracting entity, RN employer and actual nursing provider through approved business channels; verify applicable provider authority and obtain specific candidate-sharing permission. Contact consent alone is insufficient. Stop at discovery if a pharmacy has not identified the nursing provider. Verify metadata-only notifications or disable raw-submission alerts; review all copies and general contact intake. See the comparison for unresolved screening-rule cross-references and direct/indirect compact-employer duties.
 
-## Observed configuration and concrete launch choices — October 24
+## Owner decision record — October 24, 2026
 
-Signed-in dashboard review found one team owner member, no reviewers and no submission notifications configured. These observations do not assign the business intake/privacy roles or establish an approved daily process. Both newly submitted preview QA records were stored; each infusion form now has two test entries. Retain test records under the approved disposal policy; no records were deleted.
+**Source:** David's explicit answers in the task conversation:
+- “David reviews both forms in the dashboard; no email alerts.”
+- “Approve the proposed schedule” in response to 30-day tests, 90-day unqualified contacts and annual review of qualified interest.
 
-Proposed initial intake setup for owner decision:
-- **Dashboard-only option:** David is proposed as intake/privacy lead, checks both forms each business day, and uses authenticated dashboard review; no new notification destination or data copying. Identify a backup or document sole-owner coverage before launch.
-- **Notification option:** owner supplies the exact authorized destination. Confirm supported payload controls, avoid raw submission bodies where possible, then configure and test the approved route. No destination is inferred from the account login email.
-- **Alternative reviewer:** owner names the person and approved access scope before access is granted.
+**Recorded effect:** David is the sole initial intake reviewer; dashboard-only processing and the stated retention periods are approved. No email destination, additional reviewer, automatic deletion job, backup appointment, privacy/legal sign-off, billing purchase, merge or production deployment is authorized by these answers.
 
-The existing test/lead retention proposals and PHI-misdirection procedure remain ready for owner/privacy approval. No automatic retention, notification setup or new access permission has been implemented by this verification.
+**Configuration evidence:** the signed-in dashboard already showed no configured submission notifications and one owner member, with zero reviewers. No notification or access settings change is needed for the selected workflow. The observation is not a complete audit of sessions/integrations or account security.
+
+### Existing test disposition queue
+
+Both infusion forms have one October 23 test receipt and one October 24 test receipt, four entries in total. No real patient data was used. Using receipt dates as the conservative start:
+
+| Test receipt group | Entries | Delete no later than | Action |
+| --- | --- | --- | --- |
+| October 23, 2026 | One partner + one RN interest | November 22, 2026 | David reviews and deletes under approved policy, unless hold applies |
+| October 24, 2026 | One partner + one RN interest | November 23, 2026 | David reviews and deletes under approved policy, unless hold applies |
+
+No test entries were deleted by this approval-recording step. No scheduled automation or automatic retention enforcement exists. For unqualified leads, record receipt/classification and the 90-day deadline; for qualified interest, record the next annual review date and delete when no longer needed, subject to applicable recordkeeping requirements. Potential patient-data incidents remain governed by section 4, with escalation authority still to be finalized before release.

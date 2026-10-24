@@ -68,7 +68,7 @@ Required operating changes before release:
 4. Before any patient-specific work, execute the responsibility agreement and establish secure clinical access. Keep orders, patient addresses, medical details, credentials, SSNs and background reports out of public forms and ordinary business workspaces.
 5. Keep notifications to metadata only through a verified supported method. Inspect actual notification payloads with fabricated data; disable raw-body alerts if this cannot be achieved. Verify redirect after actual POST separately from receipt count.
 6. On misdirected patient data, restrict access and stop forwarding; notify the privacy responder securely, document minimally, assess obligations and preserve/delete under approved guidance. Do not automatically delete possible incident evidence or assume every misdirection is a reportable HIPAA breach.
-7. Approve retention for leads, tests, rejected contacts and downstream copies. Existing 30/90-day and annual-review periods remain proposals; no enforcement is implemented. Review general contact intake as another possible misdirection route.
+7. David approved 30-day test deletion, 90-day unqualified-contact deletion and annual qualified-interest review on October 24. Apply the manual procedure in the intake SOP, including downstream copies; no automatic enforcement exists. General contact intake and incident/privacy procedures still require their own review.
 
 ## Release decisions and required evidence
 

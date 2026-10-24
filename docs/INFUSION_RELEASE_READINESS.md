@@ -98,3 +98,6 @@ See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified stat
 - Netlify reports a team-level production-deploy pause due to credit/plan limits while existing published sites stay live. The build cannot bypass that restriction; no billing changes were made.
 - PR remains draft/unmerged. Website-only release still needs the recorded owner/privacy/claims decisions. Actual clinical staffing retains separate operational requirements.
 - Detailed evidence and current status: `INFUSION_RELEASE_CHECKLIST.md`.
+
+### Owner-approved intake and retention — October 24
+David explicitly selected sole dashboard review of both infusion forms with no email alerts, and approved 30-day test deletion, 90-day unqualified-contact deletion and annual qualified-interest review. Existing notification configuration already matches the selected workflow. The SOP now records those approvals, a manual disposition procedure and conservative November 22/23 deadlines for the current October 23/24 test entries. No records were deleted and no automatic retention job was created. Earlier descriptions of these two choices as pending are superseded by this decision record. Remaining privacy/incident, claims/compliance, deployment-capacity and final release approvals remain open.
