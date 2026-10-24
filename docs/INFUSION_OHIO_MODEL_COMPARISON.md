@@ -4,9 +4,11 @@
 
 ## Recommendation and evidence boundary
 
-Begin with **B2B RN recruitment and introductions for a verified, appropriately licensed care-delivery organization that employs and clinically directs the nurses**. Advantage Clinicians (AC) would develop relationships and recruit candidates, not accept patients, undertake visits, manage treatment or bill for nursing care. Approve the contracting legal entity and recruitment agreement before offering placement services. For now, retain exploratory business/RN interest intake only.
+Use **an employer-based B2B nurse-staffing model** as the working design: Advantage Clinicians (AC) would employ nurses and supply personnel to an identified, clinically accountable client provider under a staffing agreement. AC would retain its employer obligations; clinical responsibilities, orders, care plans, records, assignment approval and escalation would be allocated explicitly in the agreement and actual workflow. The client need not become the nurses' payroll employer.
 
-This is a proposed initial model, not a claim about the current business or a blanket staffing exemption. Supplying AC-employed or contracted field RNs is a distinct second model requiring review of the actual control, contracts and conduct. Calling direct care “staffing,” “1099,” or “pharmacy support” does not establish an exemption. A pharmacy license, NPI or accreditation alone is not evidence that an organization is authorized to operate the nursing service.
+This corrects the earlier recommendation to begin with recruitment/introductions only. The owner explained that NurseNow employed RNs and LPNs to perform work within their Ohio scopes, including IV-related work. That experience is relevant context, not evidence that AC's current entity, agreements or licenses have been verified. This website's initial interest pathway remains RN-focused; the clarification does not add an LPN service line or imply identical RN/LPN authority.
+
+Recruitment/direct placement (model A) is an alternative, not a required preliminary stage. Employer-based staffing (model B) is the working model for implementation. Direct nursing-service operations (model C) remain a separate possibility. Ohio's employment-service provisions recognize supplied staff; they do not require universal conversion to client payroll. Whether AC's particular home-infusion arrangement also requires provider licensing depends on its actual functions, contracts and conduct. A pharmacy license, NPI or accreditation alone does not verify authority to operate a nursing service. Retain exploratory business/RN interest intake until release approval, without asserting current staffing capacity or clinical authority.
 
 Verified repository baseline: draft PR #1, head `0e8f8163194bea1f6d44b4a1273741ddfc2775e9`; workflow [40017989393](https://github.com/davidekissinger/advantageclinicians/actions/runs/40017989393) completed successfully. PR discussion records 57 browser checks, 12 accessibility scans and two form-receipt tests. Those results are technical evidence only. Existing care in Ohio homes is user-reported; the provider, RN employer, licenses, agreements and authority to advertise remain unverified.
 
@@ -27,10 +29,10 @@ Verified repository baseline: draft PR #1, head `0e8f8163194bea1f6d44b4a1273741d
 
 The table describes **proposed operational allocations**, not executed agreements or a legal transfer of statutory duties. “Provider” means the identified organization authorized and accountable for nursing care; it may differ from the dispensing pharmacy.
 
-| Function | A. Recruitment/placement; provider employs RN (recommended first) | B. AC supplies employed/contracted RNs to provider | C. AC operates direct home-infusion nursing |
+| Function | A. Recruitment/placement; provider employs RN (alternative) | B. AC employs and supplies RNs to provider (working model) | C. AC operates direct home-infusion nursing |
 | --- | --- | --- | --- |
 | Contract and customer | AC contracts for recruitment with provider; provider contracts for patient care. | AC signs personnel-services agreement; identify licensed provider of record and employment/control split. | AC contracts as nursing provider and establishes patient-service responsibilities. |
-| Employer and workforce administration | Provider employs/onboards/pays RN. AC verifies representations it makes and obtains consent before sharing candidate details. | AC handles its employer obligations: pay, taxes, classification, insurance and personnel management; joint-employer questions require review. | AC handles workforce administration plus clinical organization. |
+| Employer and workforce administration | Provider employs/onboards/pays RN. AC verifies representations it makes and obtains consent before sharing candidate details. | AC employs/onboards/pays its RNs and handles taxes, insurance and personnel management; agreement specifies clinical direction and any shared employer duties. Any contractor variant needs separate classification review. | AC handles workforce administration plus clinical organization. |
 | Licensure and operating authority | Verify provider's applicable nursing authority; counsel confirms AC's recruiting scope and any employment-service obligations. | Provider authority plus separate determination whether AC's actual activities require licensure. | Obtain applicable AC skilled home-health authority before providing/holding out; no authority established by this build. |
 | Patient acceptance, scheduling and continuity | Provider accepts patients and controls visits, cancellations and continuity. AC does not dispatch patient visits. | Provider retains clinical acceptance and assignment approval; contract defines administrative scheduling, backup staffing and escalation. AC cannot promise independent coverage. | AC establishes admission, clinical scheduling, backup and continuity systems. |
 | Orders, assessment and care plans | Authorized prescriber orders treatment; provider coordinates care; RN exercises nursing judgment. | Same clinical chain; AC ensures supplied nurses know and follow approved workflows and report concerns. | AC organizes these systems with prescribers, RNs and pharmacy; pharmacy does not replace nursing oversight. |
@@ -52,7 +54,7 @@ No payment structure is approved here. Counsel should review recruitment/staffin
 
 **Partner CTA:** “Discuss a Staffing Partnership.” **RN CTA:** “Join the RN Interest List.”
 
-These changes reduce unsupported claims without presenting model A as approved. After model A is actually approved and implemented, owner/counsel can consider: “We recruit RNs for Ohio home-infusion providers. The hiring provider employs and clinically directs the nurses.” Do not publish that affirmative claim before it is true.
+The exploratory copy remains suitable while arrangements are being established. Once the employer-based staffing arrangement is verified and approved, consider: “Advantage Clinicians employs RNs and provides staffing support for Ohio home-infusion programs. Clinical responsibilities are defined with each client provider before assignments begin.” Do not publish that affirmative claim before it is true. No public copy requires client payroll employment.
 
 ## Intake and privacy changes
 
@@ -78,8 +80,12 @@ Required operating changes before release:
 | Supplied nurses (B) | Counsel + both organizations' authorized leaders | Licensure determination, workforce obligations, screening confirmations, competence, insurance and clinical responsibility agreement | NOT AUTHORIZED |
 | Direct care (C) | Owner + counsel + clinical lead | Required licenses and operating systems; medication, privacy and payer reviews as applicable | NOT AUTHORIZED |
 
-Record reviewer, date, evidence link, scope and conditions for each decision. Website approval cannot be reused as authorization for visits. Keep PR #1 draft and unmerged until its release decisions are approved. No production publish, new clinical intake, live test submissions or external partner contact is authorized by this review.
+Record reviewer, date, evidence link, scope and conditions for each decision. Website approval cannot be reused as authorization for visits. Keep PR #1 draft and unmerged until its release decisions are approved. No production publish, new clinical intake or external partner contact is authorized by this review. The owner subsequently authorized completing release-preparation work, including fabricated non-patient form testing; record results separately and do not reuse clinical data.
 
 ## Implementation review coverage
 
 Reviewed all six infusion pages, privacy/terms, build design, Ohio scope, intake SOP, release checklist/readiness and both QA scripts. Preserve prior evidence as historical. The October 24 changes narrow copy, correct stale narrative-field descriptions and add this model comparison; they do not implement clinical workflows, change the form schema or verify licenses/contracts. See the latest PR workflow for checks on the revised commit.
+
+## Correction and current working scope
+
+The client-payroll-only recommendation is withdrawn. Employer-based staffing is the current design direction; no finding was made that AC needs a home-health license merely because its employees perform IV procedures. Any licensing determination must address the specific home-care service arrangement. Staffing operations still require documented employer/provider duties and the applicable reviews. The original request to keep PR #1 unmerged until necessary release decisions are approved remains in force.

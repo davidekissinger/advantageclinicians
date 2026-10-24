@@ -2,6 +2,22 @@
 
 **Branch:** `feature/specialty-infusion-v1` — do not merge into `main` until website and compliance approvals are documented.
 
+## Current release status — October 24, 2026
+
+This matrix supersedes unchecked items in historical sections below. The later sections preserve earlier evidence; an old unchecked QA item does not negate a later passing result.
+
+| Area | Current evidence / next action | Status |
+| --- | --- | --- |
+| Website implementation | Six infusion routes and existing site integration; no additional major feature identified for informational release | COMPLETE |
+| Employer-based staffing documentation | Corrected working model: AC employs/supplies nurses; client payroll employment is not required | CORRECTED; no legal clearance implied |
+| Latest website QA | Commit `9504887`, workflow [40080815306](https://github.com/davidekissinger/advantageclinicians/actions/runs/40080815306): static and browser jobs successful; 57 browser checks, 12 accessibility scans, zero failures | PASS; documentation-only correction to receive its own CI |
+| Form registration and historical receipt | Oct 24 connector inventory: partner and RN forms each retain one recorded submission, Home/Ohio fields and separate identities | VERIFIED |
+| Current protected preview and real POST redirect | Netlify browser session is signed out; authenticate before testing latest preview and submitting fabricated non-patient data | BLOCKED BY SIGN-IN |
+| Notifications and access | Connector does not expose team membership, notification configuration or payloads; inspect signed-in dashboard | UNVERIFIED |
+| Intake/privacy operating choices | Assign owner/backup/privacy responder; approve retention, access/export and incident procedure | OWNER DECISION / IMPLEMENTATION |
+| Public claims / service arrangement | Final wording and actual employer/provider arrangement reviewed; applicable legal/compliance decision recorded | OPEN |
+| Production | Connector reports published deploy `6aaeea9896f1429124d585ea`; no merge or production publish performed | UNCHANGED |
+
 ## Verification record — 2026-10-23
 - Netlify Deploy Preview PR #1: **ready** (deploy `6adb7df9cce581c333301fb5`).
 - Netlify site-level form registration: `infusion-partner-inquiry`, `infusion-clinician-interest` detected; subsequent test entries are documented below.
@@ -82,4 +98,4 @@ Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `do
 
 ## October 24 model review — release remains blocked
 
-See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. The working business model is Advantage Clinicians employing nurses and supplying staffing to an identified, clinically accountable client provider. Client payroll employment is not a prerequisite. Recruitment/direct placement remains an optional alternative. Confirm the actual contracts, allocation of clinical responsibilities and applicable operating authority before fulfillment; the website remains business/RN interest intake only. This clarification does not record legal clearance or production release approval.

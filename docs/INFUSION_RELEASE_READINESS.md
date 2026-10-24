@@ -75,7 +75,7 @@ References:
 
 ## October 24 model review — release remains blocked
 
-See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. The working business model is Advantage Clinicians employing nurses and supplying staffing to an identified, clinically accountable client provider. Client payroll employment is not a prerequisite. Recruitment/direct placement remains an optional alternative. Confirm the actual contracts, allocation of clinical responsibilities and applicable operating authority before fulfillment; the website remains business/RN interest intake only. This clarification does not record legal clearance or production release approval.
 
 ### Verification of October 24 changes
 - Existing static script: PASS, 15 HTML pages, routes/assets/forms/SEO checks.
@@ -83,3 +83,10 @@ See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified stat
 - No QA scripts, form schemas, routing or deployment configuration changed. Tests ran against a local static server and did not submit public forms.
 - October 23 workflow 40017989393 remains historical successful evidence for the preceding head. New commit requires its own CI result; see PR checks.
 - Live POST redirects, notification payload/delivery and actual access/retention controls remain unverified. No clinical, business-owner or legal approval recorded.
+
+### Current release-preparation findings
+- October 24 GitHub workflow [40080815306](https://github.com/davidekissinger/advantageclinicians/actions/runs/40080815306) succeeded for website commit `9504887`.
+- Netlify connector confirms production remains deploy `6aaeea9896f1429124d585ea`; both infusion forms remain registered, each with one historical submission.
+- Netlify browser session is signed out. Current protected-preview review, actual POST redirect, notification settings and team/form access remain blocked or unverified. No test submissions were made during this preparation step.
+- Employer-based staffing is the working model; the recommendation requiring client payroll employment is withdrawn. This is a documentation correction, not a new finding of licensure or release approval.
+- See the current matrix in `INFUSION_RELEASE_CHECKLIST.md` for the remaining deployment decisions.
