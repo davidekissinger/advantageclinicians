@@ -1,5 +1,7 @@
-# Ohio home-infusion nursing — build scope correction
-**Date:** October 23, 2026
+# Historical Ohio home-infusion scope interpretation
+**Historical date:** October 23, 2026
+
+**Superseded October 24, 2026:** The owner clarified service and recruitment are not limited to Ohio. The geographic restrictions described below are a historical implementation record, not the current scope. See [current service scope](INFUSION_SERVICE_SCOPE.md). Existing Ohio home-care context does not establish an exclusive market.
 **Repository:** davidekissinger/advantageclinicians
 **Feature branch:** feature/specialty-infusion-v1
 

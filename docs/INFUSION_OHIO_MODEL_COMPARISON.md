@@ -1,5 +1,8 @@
 # Ohio home-infusion: business model and responsibility review
 
+**Current geographic positioning — October 24:** Service development and RN recruitment are open-ended across locations. Earlier Ohio-only marketing/intake descriptions below are historical and superseded. See [current service scope](INFUSION_SERVICE_SCOPE.md). Ohio legal references apply to that jurisdiction, not to the business's full geographic reach.
+
+
 **Reviewed:** October 24, 2026. **Status:** recommendation for owner and qualified Ohio counsel review; no legal opinion, release approval or operational authorization.
 
 ## Recommendation and evidence boundary
@@ -46,19 +49,19 @@ No payment structure is approved here. Counsel should review recruitment/staffin
 
 ## Website copy recommended for the present exploratory stage
 
-**Headline:** “Exploring Ohio home-infusion RN staffing relationships.”
+**Headline:** “Exploring home-infusion RN staffing relationships.”
 
-**Description:** “Advantage Clinicians is exploring recruitment and staffing relationships with organizations responsible for home-infusion care in Ohio. This site accepts business inquiries and RN interest only. It does not accept patients, medical orders or visit bookings.”
+**Description:** “Advantage Clinicians is exploring recruitment and staffing relationships with organizations responsible for home-infusion care. This site accepts business inquiries and RN interest only. It does not accept patients, medical orders or visit bookings.”
 
 **Role clarification:** “Before any engagement, the parties must identify the RN employer and the organization authorized and accountable for clinical care, including orders, care plans, supervision, emergency response and clinical records. No direct-care service or nursing availability is offered through this website.”
 
 **Partner CTA:** “Discuss a Staffing Partnership.” **RN CTA:** “Join the RN Interest List.”
 
-The exploratory copy remains suitable while arrangements are being established. Once the employer-based staffing arrangement is verified and approved, consider: “Advantage Clinicians employs RNs and provides staffing support for Ohio home-infusion programs. Clinical responsibilities are defined with each client provider before assignments begin.” Do not publish that affirmative claim before it is true. No public copy requires client payroll employment.
+The exploratory copy remains suitable while arrangements are being established. Once the employer-based staffing arrangement is verified and approved, consider: “Advantage Clinicians employs RNs and provides staffing support for home-infusion programs. Clinical responsibilities are defined with each client provider before assignments begin.” Do not publish that affirmative claim before it is true. No public copy requires client payroll employment.
 
 ## Intake and privacy changes
 
-Implemented baseline: fixed Home setting, county/metro geography, structured therapy/volume ranges, self-reported RN status, no uploads and no visible partner narrative. Preserve existing form identities, field names and routes. Ordinary contact and identity fields, the hidden legacy field and forged POSTs can still carry patient data; warnings, readonly attributes and noindex are not security controls.
+Current baseline: fixed Home setting, open-ended requested/preferred locations, structured therapy/volume ranges, generic self-reported RN practice authorization, no uploads and no visible partner narrative. Preserve existing form identities/routes and the hidden legacy practice field; add the generic practice field described in `INFUSION_SERVICE_SCOPE.md`. Ordinary contact and identity fields, the hidden legacy field and forged POSTs can still carry patient data; warnings, readonly attributes and noindex are not security controls.
 
 Required operating changes before release:
 

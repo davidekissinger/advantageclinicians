@@ -1,5 +1,8 @@
 # Specialty Infusion Nursing — Preview, QA and Release Gates
 
+**Current geographic positioning — October 24:** Service development and RN recruitment are open-ended across locations. Earlier Ohio-only marketing/intake descriptions below are historical and superseded. See [current service scope](INFUSION_SERVICE_SCOPE.md). Ohio legal references apply to that jurisdiction, not to the business's full geographic reach.
+
+
 **Branch:** `feature/specialty-infusion-v1` — do not merge into `main` until website and compliance approvals are documented.
 
 ## Current release status — October 24, 2026
@@ -8,10 +11,10 @@ This matrix supersedes unchecked items in historical sections below. The later s
 
 | Area | Current evidence / next action | Status |
 | --- | --- | --- |
-| Website implementation | Six infusion routes and existing site integration; no additional major feature identified for informational release | COMPLETE |
+| Website implementation | Six infusion routes and existing site integration; open-ended geographic positioning per owner direction | UPDATED; latest CI/preview required |
 | Employer-based staffing documentation | Corrected working model: AC employs/supplies nurses; client payroll employment is not required | CORRECTED; no legal clearance implied |
 | Latest website QA | Website commit `9504887`: 57 browser checks, 12 accessibility scans, zero failures. Documentation correction `5c28a36`, workflow [40082057569](https://github.com/davidekissinger/advantageclinicians/actions/runs/40082057569): static and browser jobs successful | PASS; see current PR CI for later documentation-only evidence commit |
-| Form registration and historical receipt | Oct 24 connector inventory after live preview tests: partner and RN forms each have two recorded submissions; Home/Ohio fields and separate identities preserved | VERIFIED |
+| Form registration and historical receipt | Oct 24 connector inventory after live preview tests: partner and RN forms each have two recorded submissions; separate form identities preserved; geographic fields have since been generalized | VERIFIED |
 | Current protected preview and real POST redirect | Authenticated preview `6adc7a20bc196545b7af4823` for `5c28a36` is ready. Both fabricated non-patient submissions redirected to `/specialty-infusion-nursing/thank-you/` and were recorded | PASS |
 | Notifications and access | Signed-in dashboard: no submission notifications configured; one team member and zero reviewers. David approved dashboard-only review of both forms, no email alerts; existing settings already match. No settings or membership changed | APPROVED / CONFIGURATION MATCHES |
 | Retention | David approved 30-day tests, 90-day unqualified contacts, annual qualified-interest review; manual procedure and current test deadlines recorded in SOP | APPROVED; NO AUTOMATIC DELETION |
@@ -89,7 +92,7 @@ Keep the main branch and current production deploy as known-good. If a later pro
 - [ ] Owner, privacy and legal/claims approvals not yet provided.
 
 Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `docs/INFUSION_INTAKE_SOP_DRAFT.md`.
-## Ohio home-infusion scope and retesting
+## Historical Ohio scope and retesting (superseded)
 - [x] Initial partner inquiry restricted to patients' homes within Ohio, organized by county/metro.
 - [x] Ambulatory and facility selections removed from partner form.
 - [x] RN form includes self-reported eligibility to practice in Ohio; no primary-source verification implied.
@@ -121,3 +124,6 @@ Remaining after the owner decisions below: privacy escalation/access/export/inci
 - [ ] Remaining privacy/claims/compliance and production release decisions complete.
 
 These approvals do not authorize spending, new access, merge or publication.
+
+## Geographic copy correction — October 24
+Ohio-only public wording and required eligibility were removed from service and recruitment paths, metadata, forms and privacy disclosure. Partner/RN location inputs are open-ended. The new generic RN practice field replaces the visible Ohio-specific question; the old field stays hidden/blank for historical data compatibility. Prior real-POST evidence belongs to the preceding form revision; check new field detection and current preview. Approved dashboard-only review and manual retention are unchanged.

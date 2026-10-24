@@ -1,5 +1,8 @@
 # Infusion Nursing: Website Production-Readiness Review
 
+**Current geographic positioning — October 24:** Service development and RN recruitment are open-ended across locations. Earlier Ohio-only marketing/intake descriptions below are historical and superseded. See [current service scope](INFUSION_SERVICE_SCOPE.md). Ohio legal references apply to that jurisdiction, not to the business's full geographic reach.
+
+
 **Review date:** October 23, 2026  
 **Repository:** `davidekissinger/advantageclinicians`  
 **Branch:** `feature/specialty-infusion-v1`  
@@ -58,7 +61,7 @@ Official references:
 ## Rollback
 The main branch and its production deploy were unchanged at review. Preserve known-good production deploy and revert the merge or republish known-good Netlify production deploy if a subsequently approved release fails. Recheck pages and form functionality; keep proper records of form submissions.
 
-## Ohio home-infusion scope clarification — October 23, 2026
+## Historical Ohio scope interpretation — October 23 (superseded)
 The user clarified that existing infusion care occurs **in patients’ homes within Ohio**. The public website is narrowed to exploratory RN staffing relationships for Ohio home-infusion programs. This clarification does not independently establish which agency presently delivers the clinical care, who employs RNs, or whether Advantage Clinicians holds Ohio home-health licensing or has coverage capacity.
 
 The partner intake now accepts only a fixed Home care setting, Ohio county-level geography and structured business data; its optional narrative field is replaced with a blank hidden legacy field to reduce accidental PHI. The RN form asks for self-reported possible Ohio RN practice authorization and county preferences. Neither form verifies clinician competence or licensing.

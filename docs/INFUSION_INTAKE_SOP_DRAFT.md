@@ -1,5 +1,8 @@
 # Infusion Nursing: Intake, Privacy and Retention SOP
 
+**Current geographic positioning — October 24:** Service development and RN recruitment are open-ended across locations. Earlier Ohio-only marketing/intake descriptions below are historical and superseded. See [current service scope](INFUSION_SERVICE_SCOPE.md). Ohio legal references apply to that jurisdiction, not to the business's full geographic reach.
+
+
 **Status:** Intake routing and retention schedule APPROVED by David Kissinger on October 24, 2026; remaining privacy/incident and release decisions are open.
 
 **Intake owner:** David Kissinger, sole reviewer of both forms through the authenticated Netlify dashboard; no email alerts. No backup or additional access is designated by this approval.
@@ -62,13 +65,13 @@ There is **no automated retention enforcement** implemented in this version; man
 - [x] David approved dashboard-only review of both forms, with no email alerts, on October 24, 2026.
 - [x] David approved 30-day test / 90-day unqualified / annual qualified-record review on October 24, 2026.
 - [ ] Incident/privacy escalation process and remaining release decisions approved.
-- [ ] Public claims/legal review documented, including Ohio Chapter 3740 applicability.
+- [ ] Public claims/legal review documented; evaluate requirements for each proposed engagement location, including Ohio Chapter 3740 where applicable.
 - [ ] Final preview, submit/redirect tests and rollback reviewed.
 - [ ] PR marked ready and merged **only after** these approvals.
 
 **The public website and the clinical operations platform have separate release decisions.**
 
-## Ohio home-infusion intake protocol — October 23, 2026
+## Historical Ohio intake interpretation — October 23 (superseded)
 The user clarified that existing infusion care occurs **in patients’ homes within Ohio**. The public website is narrowed to exploratory RN staffing relationships for Ohio home-infusion programs. This clarification does not independently establish which agency presently delivers the clinical care, who employs RNs, or whether Advantage Clinicians holds Ohio home-health licensing or has coverage capacity.
 
 The partner intake now accepts only a fixed Home care setting, Ohio county-level geography and structured business data; its optional narrative field is replaced with a blank hidden legacy field to reduce accidental PHI. The RN form asks for self-reported possible Ohio RN practice authorization and county preferences. Neither form verifies clinician competence or licensing.

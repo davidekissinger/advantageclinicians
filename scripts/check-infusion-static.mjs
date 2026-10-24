@@ -60,7 +60,7 @@ for (const [file, name, consent] of [
   if (!new RegExp('<input[^>]*name="' + consent + '"[^>]*required').test(markup))
     errors.push(file + ": contact consent must be required");
 }
-// Scope-specific invariants for Ohio home-infusion inquiry paths.
+// Home-infusion inquiries must accept locations without a single-state restriction.
 const partnerForm = read("specialty-infusion-nursing/request-coverage/index.html");
 if (!partnerForm.includes('name="care_setting" type="text" value="Home" readonly'))
   errors.push("Home setting must be fixed in partner form");
@@ -68,13 +68,18 @@ if (partnerForm.includes("<option>Ambulatory infusion</option>") || partnerForm.
   errors.push("Out-of-scope partner care setting available");
 if (partnerForm.includes('<textarea id="partner-message"'))
   errors.push("Public partner narrative textarea must not be available");
-if (!partnerForm.includes("Ohio counties or metro areas"))
-  errors.push("Partner form needs Ohio-specific geography");
+if (!partnerForm.includes('name="state_regions"') || !partnerForm.includes("Requested service locations"))
+  errors.push("Partner form must collect requested service locations");
 const rnForm = read("specialty-infusion-nursing/join-network/index.html");
-if (!rnForm.includes('name="ohio_practice_status" required'))
-  errors.push("RN form must ask self-reported Ohio practice status");
-if (!rnForm.includes("Ohio counties or metro areas"))
-  errors.push("RN form must identify Ohio home-visit regions");
+if (!rnForm.includes('name="practice_authorization_status" required'))
+  errors.push("RN form must ask location-neutral practice authorization");
+if (!rnForm.includes('type="hidden" name="ohio_practice_status" value=""'))
+  errors.push("Legacy practice field must remain hidden for historical submission compatibility");
+if (!rnForm.includes("Preferred locations for home visits"))
+  errors.push("RN form must collect preferred locations");
+for (const file of htmlFiles) {
+  if (/\bOhio\b/i.test(read(file))) errors.push(file + ": state-specific marketing restriction remains");
+}
 const sitemap = read("sitemap.xml");
 for (const url of ["specialty-infusion-nursing/", "specialty-infusion-nursing/partners/", "specialty-infusion-nursing/clinicians/"]) {
   if (!sitemap.includes("<loc>https://advantageclinicians.com/" + url + "</loc>"))

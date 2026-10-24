@@ -4,9 +4,9 @@ Status: v1 **exploratory informational MVP** on branch `feature/specialty-infusi
 
 ## Goal and boundaries
 - Home for the service line: Advantage Clinicians; Good Stick remains mobile specimen collection and is not modified.
-- B2B conversation between Ohio home-infusion pharmacies/providers and a potential RN network; no ambulatory, facility or non-Ohio staffing coverage is promoted in this release.
-- Two business/professional interest Netlify Forms. Partner form fixes setting to Home and collects Ohio regions; optional public narrative field removed. RN form adds self-reported Ohio practice status and Ohio county preferences. No patient intake, orders, automated matching, clinical referral or assignment guarantees.
-- **User-reported current care context:** Infusions are presently done in patients’ homes within Ohio. The site therefore focuses on prospective staffing for home infusion within Ohio, without asserting Advantage Clinicians operates direct care or can serve every county.
+- B2B conversation between home-infusion pharmacies/providers and a potential RN network across locations; no Ohio-only service or recruitment boundary. Inquiries do not establish coverage availability.
+- Two business/professional interest Netlify Forms. Partner form fixes setting to Home and collects requested locations; optional public narrative field removed. RN form asks location-neutral practice authorization, license jurisdictions and preferred locations; the legacy state-specific field is hidden and blank. No patient intake, orders, automated matching, clinical referral or assignment guarantees.
+- **User-reported care context:** Existing infusions occur in patients’ homes within Ohio. The owner clarified October 24 that this is not a geographic service/recruitment limit. See `INFUSION_SERVICE_SCOPE.md` for current positioning; availability and authority are evaluated by engagement location.
 - No Supabase or authenticated CRM in v1.
 
 ## Pages

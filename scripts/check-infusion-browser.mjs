@@ -114,7 +114,7 @@ try {
         await p.locator("#partner-email").fill("example@example.org");
         await p.locator("#partner-org").fill("Fictitious Pharmacy");
         await p.locator("#partner-type").selectOption("Specialty pharmacy");
-        await p.locator("#partner-region").fill("Lucas County, Ohio");
+        await p.locator("#partner-region").fill("California and Washington");
         assert.equal(await p.locator("#partner-setting").inputValue(), "Home");
         assert((await p.locator("#partner-setting").getAttribute("readonly")) !== null, "Home setting must be read-only");
         await p.locator("#partner-timing").selectOption("Exploratory planning");
@@ -129,9 +129,9 @@ try {
         await p.locator("#rn-email").fill("example@example.org");
         await p.locator("#rn-license").selectOption("RN");
         await p.locator("#rn-years").selectOption("1–3 years");
-        await p.locator("#rn-license-states").fill("Ohio");
-        await p.locator("#rn-ohio-practice").selectOption("Ohio RN license");
-        await p.locator("#rn-regions").fill("Toledo, Ohio");
+        await p.locator("#rn-license-states").fill("California, Washington");
+        await p.locator("#rn-practice-status").selectOption("Licensed in preferred locations");
+        await p.locator("#rn-regions").fill("Seattle metro; Northern California");
         await p.locator('[name="consent_to_contact"]').check();
       }
     }
@@ -145,10 +145,17 @@ try {
         "Expected Netlify success target");
       assert((await form.locator('input[type="file"]').count()) === 0, "Uploads must be absent");
       await item.fill(page);
-      assert(await form.evaluate(el => el.checkValidity()), "Sample fictional data should validate");
+      assert(await form.evaluate(el => el.checkValidity()), "Fictional inquiries from multiple locations should validate");
       assert(await form.evaluate(el => new FormData(el).get("form-name")) === item.name,
         "Netlify hidden form name must match");
-      report.checks.push("Form validity, consent and no upload: " + item.name);
+      assert(!(await form.innerText()).includes("Ohio"), "Form must not present a single-state restriction");
+      if (item.name === "infusion-clinician-interest") {
+        assert.equal(await form.evaluate(el => new FormData(el).get("ohio_practice_status")), "",
+          "Legacy practice field must stay blank");
+        assert.equal(await form.evaluate(el => new FormData(el).get("practice_authorization_status")),
+          "Licensed in preferred locations", "Generic practice status must be included");
+      }
+      report.checks.push("Form validity, multiple locations, consent and no upload: " + item.name);
     } catch (error) { fail("form " + item.name, error); }
   }
 
