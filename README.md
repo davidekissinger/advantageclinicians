@@ -28,3 +28,22 @@ The homepage uses the approved colorful five-clinician image (`/assets/hero-colo
 ## v5 visual adjustment
 - Header logo increased to 310px wide on desktop and 230px on mobile.
 - No other content or layout changes from the brand-guide-aligned color-hero build.
+
+## Specialty infusion nursing — v1 feature branch
+
+An **exploratory specialty service line**, with dedicated partner and RN interest paths.
+The website is **not** a patient referral portal, clinical staffing guarantee, approved job posting, or fulfillment/scheduling system.
+
+| Path | Purpose |
+|---|---|
+| `/specialty-infusion-nursing/` | Program overview and audience choice |
+| `/specialty-infusion-nursing/partners/` | Partner discovery |
+| `/specialty-infusion-nursing/clinicians/` | Infusion RN discovery |
+| `/specialty-infusion-nursing/request-coverage/` | Non-PHI partner inquiry |
+| `/specialty-infusion-nursing/join-network/` | Limited RN interest |
+| `/specialty-infusion-nursing/thank-you/` | Generic form acknowledgement |
+
+**Forms:** `infusion-partner-inquiry` and `infusion-clinician-interest`, distinct from the existing `contact` form. Netlify Forms must detect both forms from static HTML after preview deploy. No files, clinical orders, patient information, sensitive credentials or medical data are requested. Both forms require explicit contact consent. Netlify stores form submissions; owner must approve processing, restricted access, retention, and notification settings before production form launch.
+
+**Implementation:** Adds HTML routes and scoped CSS to the existing static Netlify project. No new frameworks, Supabase, credentialing portal or independent clinical operations workflow.
+See `docs/INFUSION_RELEASE_CHECKLIST.md` for tests and public release gates. Production must remain unchanged until review and merge.

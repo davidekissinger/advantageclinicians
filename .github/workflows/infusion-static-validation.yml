@@ -1,0 +1,39 @@
+name: Static site and infusion form validation
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check HTML routes, forms and SEO
+        run: node scripts/check-infusion-static.mjs
+  browser-qa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install QA browser libraries
+        run: npm install --no-save --no-package-lock playwright@1.56.1 @axe-core/playwright@4.11.0
+      - name: Install Chromium browser and Linux dependencies
+        run: npx playwright install chromium --with-deps
+      - name: Run responsive, form-validation and WCAG checks
+        run: node scripts/check-infusion-browser.mjs
+      - name: Attach screenshots and machine-readable audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: infusion-browser-qa
+          path: qa-artifacts/
+          if-no-files-found: warn
+          retention-days: 14
