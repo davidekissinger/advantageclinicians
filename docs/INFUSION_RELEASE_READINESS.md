@@ -32,7 +32,7 @@ Automated scanning does not establish conformance for every accessibility criter
 - Site may invite **exploratory staffing discussions**; it cannot represent established infusion-visit availability, staffed territories, verified nurse competency, or licensed direct-care operations without documentation.
 - Ohio Revised Code Chapter 3740, including §3740.02, restricts home-health agencies without the required licensure from providing or **holding themselves out** as skilled home-health service providers. The entity's actual model and applicability of these rules require qualified review.
 - Distinguish *staffing/sourcing personnel for a clinically accountable pharmacy/provider* from *direct nursing care operated by Advantage Clinicians*. Neither clinical licensure nor operating authority was verified here.
-- Existing free-text partner field remains a residual risk: PHI could still be submitted despite warning and attestation. No public form is suitable for patient-specific orders, referrals or care documentation.
+- The visible partner narrative field has been removed. Remaining text fields, the hidden legacy field and forged submissions remain a residual risk: PHI could still be submitted despite warning and attestation. No public form is suitable for patient-specific orders, referrals or care documentation.
 - The use of Netlify's ordinary form storage for patient information has **not** been authorized. If a PHI processing relationship is contemplated, legal counsel must determine roles and required safeguards/BAAs and identify an approved platform.
 
 Official references:
@@ -72,3 +72,14 @@ References:
 - https://nursing.ohio.gov/licensing-and-certification/multistate-licensure/employer-information
 
 **This change is not public-launch authorization or authorization to perform clinical services.**
+
+## October 24 model review — release remains blocked
+
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.
+
+### Verification of October 24 changes
+- Existing static script: PASS, 15 HTML pages, routes/assets/forms/SEO checks.
+- Existing Playwright/axe script: PASS, 57 checks, 12 accessibility scans, zero failures; six screenshots generated. Updated mobile hub screenshot reviewed.
+- No QA scripts, form schemas, routing or deployment configuration changed. Tests ran against a local static server and did not submit public forms.
+- October 23 workflow 40017989393 remains historical successful evidence for the preceding head. New commit requires its own CI result; see PR checks.
+- Live POST redirects, notification payload/delivery and actual access/retention controls remain unverified. No clinical, business-owner or legal approval recorded.

@@ -79,3 +79,7 @@ Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `do
 - [ ] Run static and browser validation after these form and page changes.
 - [ ] Verify Ohio home-health agency/clinical-provider and employer relationship with qualified counsel before any service or licensure claim.
 - [ ] Approve updated privacy disclosures, intake ownership and retention safeguards before merging.
+
+## October 24 model review — release remains blocked
+
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.

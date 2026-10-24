@@ -29,7 +29,7 @@ Only expressly authorized team members should access forms. Do not share access 
 5. If the information is sufficient and lawful, communicate through an approved business channel. If further regulated information is needed, first create a separate secure operational workflow.
 
 ## 4. Potential patient/PHI misdirection
-Public forms use warnings and a submitter attestation, **not** automated PHI detection. The optional partner narrative field is a known risk.
+Public forms use warnings and a submitter attestation, **not** automated PHI detection. The visible partner narrative field has been removed. Remaining text fields, the hidden legacy field and forged submissions can still contain patient information; these forms do not enforce a server-side clinical-data filter.
 1. Stop ordinary processing and do not forward the submission by normal email, Slack or spreadsheets.
 2. Restrict viewer access, identify whether the content may contain patient information, and inform the designated privacy contact through an approved process.
 3. Record the event with minimal identifying details and no unnecessary duplicate content.
@@ -77,3 +77,9 @@ References:
 - https://nursing.ohio.gov/licensing-and-certification/multistate-licensure/employer-information
 
 **This change is not public-launch authorization or authorization to perform clinical services.**
+
+## October 24 model review — release remains blocked
+
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.
+
+Before an introduction, verify the contracting entity, RN employer and actual nursing provider through approved business channels; verify applicable provider authority and obtain specific candidate-sharing permission. Contact consent alone is insufficient. Stop at discovery if a pharmacy has not identified the nursing provider. Verify metadata-only notifications or disable raw-submission alerts; review all copies and general contact intake. See the comparison for unresolved screening-rule cross-references and direct/indirect compact-employer duties.

@@ -1,0 +1,85 @@
+# Ohio home-infusion: business model and responsibility review
+
+**Reviewed:** October 24, 2026. **Status:** recommendation for owner and qualified Ohio counsel review; no legal opinion, release approval or operational authorization.
+
+## Recommendation and evidence boundary
+
+Begin with **B2B RN recruitment and introductions for a verified, appropriately licensed care-delivery organization that employs and clinically directs the nurses**. Advantage Clinicians (AC) would develop relationships and recruit candidates, not accept patients, undertake visits, manage treatment or bill for nursing care. Approve the contracting legal entity and recruitment agreement before offering placement services. For now, retain exploratory business/RN interest intake only.
+
+This is a proposed initial model, not a claim about the current business or a blanket staffing exemption. Supplying AC-employed or contracted field RNs is a distinct second model requiring review of the actual control, contracts and conduct. Calling direct care “staffing,” “1099,” or “pharmacy support” does not establish an exemption. A pharmacy license, NPI or accreditation alone is not evidence that an organization is authorized to operate the nursing service.
+
+Verified repository baseline: draft PR #1, head `0e8f8163194bea1f6d44b4a1273741ddfc2775e9`; workflow [40017989393](https://github.com/davidekissinger/advantageclinicians/actions/runs/40017989393) completed successfully. PR discussion records 57 browser checks, 12 accessibility scans and two form-receipt tests. Those results are technical evidence only. Existing care in Ohio homes is user-reported; the provider, RN employer, licenses, agreements and authority to advertise remain unverified.
+
+## Verified requirements from primary sources
+
+| Authority | Requirement verified | Application still requiring review |
+| --- | --- | --- |
+| [ORC 3740.01(F), (G), (M), (S)](https://codes.ohio.gov/ohio-revised-code/section-3740.01) | Skilled nursing in a patient's home falls within the chapter's service definitions. Agency “employee” includes an individual referred by an employment service. A nonagency provider is self-employed and does not employ another person directly or by contract; specified exclusions exist. | Determine the real provider and any applicable exclusion. Do not extend a narrow individual exclusion to an agency network. |
+| [ORC 3740.02](https://codes.ohio.gov/ohio-revised-code/section-3740.02) and [OAC 3701-60-02](https://codes.ohio.gov/ohio-administrative-code/rule-3701-60-02) | Covered providers need the appropriate current license both to provide services and to hold themselves/their employees out as providers. | Counsel must evaluate the whole website, agreements and actual operations; disclaimers alone do not determine classification. |
+| [ORC 3740.03(A)](https://codes.ohio.gov/ohio-revised-code/section-3740.03) and [OAC 3701-60-03](https://codes.ohio.gov/ohio-administrative-code/rule-3701-60-03) | Skilled licensure requires an accepted qualification route: Medicare certification, recognized accreditation, aging certification, or otherwise meeting Medicare conditions. The statute specifies a $250 application fee and a $50,000 bond for an applicant not providing direct care on/immediately before September 30, 2021. | Confirm the entity's route, current application evidence and any applicable exceptions with ODH/counsel. State licensure does not itself confer payer enrollment. |
+| [OAC 3701-60-05](https://codes.ohio.gov/ohio-administrative-code/rule-3701-60-05) and [3701-60-06](https://codes.ohio.gov/ohio-administrative-code/rule-3701-60-06) | Agency database review and criminal-record requirements reach referred direct-care personnel. Employment-service reliance requires the specified confirmations, including a qualifying criminal check within the preceding year. | Verify exact evidence, timing, disqualifiers and residency/FBI requirements. Published rule 3701-60-06(I) contains cross-references that appear inconsistent with current rule titles; resolve with ODH/counsel before relying on the exception. A generic “background checked” assurance is insufficient. |
+| [OAC 4723-4-03](https://codes.ohio.gov/ohio-administrative-code/rule-4723-4-03) and [4723-4-07](https://codes.ohio.gov/ohio-administrative-code/rule-4723-4-07) | Each RN remains responsible for competent practice, valid orders, clarification of unsafe/invalid orders, confidentiality and the nursing process, including assessment, planning, documentation and evaluation. Additional preparation/skills must be documented when care exceeds basic preparation. | Establish therapy/device-specific competence and policies. Contracts cannot transfer away the RN's professional duties. These sources do not establish one universal infusion certificate. |
+| [ORC 4723.114](https://codes.ohio.gov/ohio-revised-code/section-4723.114) and [OAC 4723-11-03](https://codes.ohio.gov/ohio-administrative-code/rule-4723-11-03) | Obligations reach entities employing or contracting directly or indirectly for nurses with non-Ohio multistate licenses: annual reporting by January 31 and provision of Board-developed Ohio practice information. | Determine every obligated party; do not assume the payroll employer's compliance automatically discharges the contracting provider's duties. Verify each RN's actual Ohio authorization separately. |
+| [OAC 4729:5-23-01](https://codes.ohio.gov/ohio-administrative-code/rule-4729%3A5-23-01) | Limited-facility drug rules expressly include home-health providers where applicable. | Pharmacy counsel/Board review is needed before AC procures, stocks, stores, supplies or otherwise handles drugs, including emergency medications. Patient-specific dispensing by a pharmacy is a separate function from nursing delivery. |
+| [HHS business-associate guidance](https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html) | HIPAA roles depend on covered transactions, functions and PHI relationships. Workforce and provider-to-provider treatment disclosures differ from business-associate services. Required BAAs extend to relevant subcontractors. | Determine AC's actual role and data flows before PHI access. Neither “staffing only” nor a signed BAA establishes that a platform or workflow is suitable. |
+
+## Responsibility allocation by model
+
+The table describes **proposed operational allocations**, not executed agreements or a legal transfer of statutory duties. “Provider” means the identified organization authorized and accountable for nursing care; it may differ from the dispensing pharmacy.
+
+| Function | A. Recruitment/placement; provider employs RN (recommended first) | B. AC supplies employed/contracted RNs to provider | C. AC operates direct home-infusion nursing |
+| --- | --- | --- | --- |
+| Contract and customer | AC contracts for recruitment with provider; provider contracts for patient care. | AC signs personnel-services agreement; identify licensed provider of record and employment/control split. | AC contracts as nursing provider and establishes patient-service responsibilities. |
+| Employer and workforce administration | Provider employs/onboards/pays RN. AC verifies representations it makes and obtains consent before sharing candidate details. | AC handles its employer obligations: pay, taxes, classification, insurance and personnel management; joint-employer questions require review. | AC handles workforce administration plus clinical organization. |
+| Licensure and operating authority | Verify provider's applicable nursing authority; counsel confirms AC's recruiting scope and any employment-service obligations. | Provider authority plus separate determination whether AC's actual activities require licensure. | Obtain applicable AC skilled home-health authority before providing/holding out; no authority established by this build. |
+| Patient acceptance, scheduling and continuity | Provider accepts patients and controls visits, cancellations and continuity. AC does not dispatch patient visits. | Provider retains clinical acceptance and assignment approval; contract defines administrative scheduling, backup staffing and escalation. AC cannot promise independent coverage. | AC establishes admission, clinical scheduling, backup and continuity systems. |
+| Orders, assessment and care plans | Authorized prescriber orders treatment; provider coordinates care; RN exercises nursing judgment. | Same clinical chain; AC ensures supplied nurses know and follow approved workflows and report concerns. | AC organizes these systems with prescribers, RNs and pharmacy; pharmacy does not replace nursing oversight. |
+| Drug preparation, dispensing and logistics | Appropriately authorized pharmacy handles its drug functions; provider/RN follow agreed handling and administration procedures. | Same; no independent AC drug inventory or dispensing in proposed model. | Pharmacy retains dispensing functions; AC must establish lawful nursing medication handling and review any drug licensure implications. |
+| RN license, skills and screening | Provider makes final employment/clinical acceptance decision and completes applicable checks; AC must substantiate any credential claims. | AC and provider agree who checks, documents and rechecks; provider obtains required confirmations or performs its own checks. Provider validates clinical fit. | AC owns agency screening, competence system and ongoing monitoring; each RN retains individual accountability. |
+| Emergency response, first doses, adverse events | Provider supplies approved protocols, reachable clinical support and escalation; RN acts within competence and reports. | Provider leads clinical response; AC has a personnel escalation and incident cooperation duty under agreement. | AC establishes clinical support, emergency/transfer protocols, incident review and quality oversight. |
+| Clinical record, privacy and complaints | Provider maintains clinical record; pharmacy maintains its record. AC receives no patient data for recruitment; handles candidate/business data responsibly. | Use provider-approved records/access for care; evaluate AC's workforce/BA status and any necessary secure data flow. | AC establishes clinical records, patient rights/complaints, privacy/security and incident systems; determine HIPAA status and vendors. |
+| Billing and insurance | AC invoices agreed recruitment services; provider/pharmacy bill their lawful services. | AC invoices personnel services under reviewed terms; provider bills care if authorized. Allocate professional/general liability and workers' compensation. | AC establishes lawful clinical billing, payer enrollment where relevant and appropriate clinical/business insurance. |
+
+No payment structure is approved here. Counsel should review recruitment/staffing fees, referral-related remuneration, worker classification, insurance and payer rules before contracting. [CMS home-infusion information](https://www.cms.gov/medicare/payment/fee-for-service-providers/home-infusion-therapy) describes a separate Medicare benefit; that is not blanket authority for every home-infusion nursing visit or payment claim.
+
+## Website copy recommended for the present exploratory stage
+
+**Headline:** “Exploring Ohio home-infusion RN staffing relationships.”
+
+**Description:** “Advantage Clinicians is exploring recruitment and staffing relationships with organizations responsible for home-infusion care in Ohio. This site accepts business inquiries and RN interest only. It does not accept patients, medical orders or visit bookings.”
+
+**Role clarification:** “Before any engagement, the parties must identify the RN employer and the organization authorized and accountable for clinical care, including orders, care plans, supervision, emergency response and clinical records. No direct-care service or nursing availability is offered through this website.”
+
+**Partner CTA:** “Discuss a Staffing Partnership.” **RN CTA:** “Join the RN Interest List.”
+
+These changes reduce unsupported claims without presenting model A as approved. After model A is actually approved and implemented, owner/counsel can consider: “We recruit RNs for Ohio home-infusion providers. The hiring provider employs and clinically directs the nurses.” Do not publish that affirmative claim before it is true.
+
+## Intake and privacy changes
+
+Implemented baseline: fixed Home setting, county/metro geography, structured therapy/volume ranges, self-reported RN status, no uploads and no visible partner narrative. Preserve existing form identities, field names and routes. Ordinary contact and identity fields, the hidden legacy field and forged POSTs can still carry patient data; warnings, readonly attributes and noindex are not security controls.
+
+Required operating changes before release:
+
+1. Name an intake owner, backup and privacy responder. Inventory Netlify access, MFA/account controls, exports, notifications, spam records and downstream copies. Verify least privilege; do not claim these controls are already configured.
+2. Use public forms for discovery only. In an approved business channel, obtain the contracting legal entity, proposed RN employer and actual nursing provider; verify applicable licenses from official sources. Record evidence/date/reviewer without patient identifiers. A pharmacy-only contact must identify the nursing provider or stop at discovery.
+3. Before any candidate introduction, obtain specific candidate permission and disclose the recipient and purpose. Contact consent is not permission for unrestricted candidate distribution or marketing.
+4. Before any patient-specific work, execute the responsibility agreement and establish secure clinical access. Keep orders, patient addresses, medical details, credentials, SSNs and background reports out of public forms and ordinary business workspaces.
+5. Keep notifications to metadata only through a verified supported method. Inspect actual notification payloads with fabricated data; disable raw-body alerts if this cannot be achieved. Verify redirect after actual POST separately from receipt count.
+6. On misdirected patient data, restrict access and stop forwarding; notify the privacy responder securely, document minimally, assess obligations and preserve/delete under approved guidance. Do not automatically delete possible incident evidence or assume every misdirection is a reportable HIPAA breach.
+7. Approve retention for leads, tests, rejected contacts and downstream copies. Existing 30/90-day and annual-review periods remain proposals; no enforcement is implemented. Review general contact intake as another possible misdirection route.
+
+## Release decisions and required evidence
+
+| Decision | Accountable approval | Evidence before release/operation | Current status |
+| --- | --- | --- | --- |
+| Legal entity and model A/B/C | Owner + Ohio counsel | Entity identity, actual functions, licensing/employment-service analysis; ODH clarification where unresolved | OPEN |
+| Public website only | Owner + legal/claims + privacy reviewers | Approved exact copy, data map, named owners/access, retention/incident process, current QA, redirect/notification decision | OPEN; draft PR only |
+| Recruitment introduction | Owner + counsel + hiring provider | Recruitment agreement, verified provider authority, candidate consent and secure recruiting workflow | OPEN |
+| Supplied nurses (B) | Counsel + both organizations' authorized leaders | Licensure determination, workforce obligations, screening confirmations, competence, insurance and clinical responsibility agreement | NOT AUTHORIZED |
+| Direct care (C) | Owner + counsel + clinical lead | Required licenses and operating systems; medication, privacy and payer reviews as applicable | NOT AUTHORIZED |
+
+Record reviewer, date, evidence link, scope and conditions for each decision. Website approval cannot be reused as authorization for visits. Keep PR #1 draft and unmerged until its release decisions are approved. No production publish, new clinical intake, live test submissions or external partner contact is authorized by this review.
+
+## Implementation review coverage
+
+Reviewed all six infusion pages, privacy/terms, build design, Ohio scope, intake SOP, release checklist/readiness and both QA scripts. Preserve prior evidence as historical. The October 24 changes narrow copy, correct stale narrative-field descriptions and add this model comparison; they do not implement clinical workflows, change the form schema or verify licenses/contracts. See the latest PR workflow for checks on the revised commit.

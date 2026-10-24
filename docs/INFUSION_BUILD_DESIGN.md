@@ -44,3 +44,7 @@ Source baseline: Advantage Clinicians Infusion Nursing Design & Build Structure 
 - HHS business associate guidance, applicable only if a covered-entity/business-associate relationship and PHI access exists: https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html
 
 **Decision:** This build is a prospective B2B staffing **discussion** and RN interest registration, not an operational infusion nursing offering. A clinician's interest submission does not verify a license or competency. No agency licensure has been established by this build.
+
+## October 24 model review — release remains blocked
+
+See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. Recruitment/introductions with provider employment is the recommended first model, pending owner and counsel approval; supplied clinical staff and direct care require separate decisions. No model or release is approved by this recommendation.
