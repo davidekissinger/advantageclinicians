@@ -87,6 +87,14 @@ See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified stat
 ### Current release-preparation findings
 - October 24 GitHub workflow [40080815306](https://github.com/davidekissinger/advantageclinicians/actions/runs/40080815306) succeeded for website commit `9504887`.
 - Netlify connector confirms production remains deploy `6aaeea9896f1429124d585ea`; both infusion forms remain registered, each with one historical submission.
-- Netlify browser session is signed out. Current protected-preview review, actual POST redirect, notification settings and team/form access remain blocked or unverified. No test submissions were made during this preparation step.
+- The initial preparation pass was blocked by a signed-out browser session; the later authenticated checks below supersede that limitation.
 - Employer-based staffing is the working model; the recommendation requiring client payroll employment is withdrawn. This is a documentation correction, not a new finding of licensure or release approval.
 - See the current matrix in `INFUSION_RELEASE_CHECKLIST.md` for the remaining deployment decisions.
+
+### Authenticated release-preparation results — October 24
+- Corrected-model commit `5c28a36` passed static and browser CI in workflow [40082057569](https://github.com/davidekissinger/advantageclinicians/actions/runs/40082057569). Its Netlify deploy preview `6adc7a20bc196545b7af4823` is ready.
+- Both forms were submitted in the actual protected preview with clearly fabricated non-patient QA data. Both reached the generic thank-you page; Netlify independently recorded each new entry, increasing each count from 1 to 2. This closes the former live-POST redirect gap for this preview.
+- Submission notifications are not configured. Team membership shows one owner member, zero reviewers; no settings or access changes made. Retention and incident processes remain proposed.
+- Netlify reports a team-level production-deploy pause due to credit/plan limits while existing published sites stay live. The build cannot bypass that restriction; no billing changes were made.
+- PR remains draft/unmerged. Website-only release still needs the recorded owner/privacy/claims decisions. Actual clinical staffing retains separate operational requirements.
+- Detailed evidence and current status: `INFUSION_RELEASE_CHECKLIST.md`.

@@ -83,3 +83,14 @@ References:
 See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. The working business model is Advantage Clinicians employing nurses and supplying staffing to an identified, clinically accountable client provider. Client payroll employment is not a prerequisite. Recruitment/direct placement remains an optional alternative. Confirm the actual contracts, allocation of clinical responsibilities and applicable operating authority before fulfillment; the website remains business/RN interest intake only. This clarification does not record legal clearance or production release approval.
 
 Before an introduction, verify the contracting entity, RN employer and actual nursing provider through approved business channels; verify applicable provider authority and obtain specific candidate-sharing permission. Contact consent alone is insufficient. Stop at discovery if a pharmacy has not identified the nursing provider. Verify metadata-only notifications or disable raw-submission alerts; review all copies and general contact intake. See the comparison for unresolved screening-rule cross-references and direct/indirect compact-employer duties.
+
+## Observed configuration and concrete launch choices — October 24
+
+Signed-in dashboard review found one team owner member, no reviewers and no submission notifications configured. These observations do not assign the business intake/privacy roles or establish an approved daily process. Both newly submitted preview QA records were stored; each infusion form now has two test entries. Retain test records under the approved disposal policy; no records were deleted.
+
+Proposed initial intake setup for owner decision:
+- **Dashboard-only option:** David is proposed as intake/privacy lead, checks both forms each business day, and uses authenticated dashboard review; no new notification destination or data copying. Identify a backup or document sole-owner coverage before launch.
+- **Notification option:** owner supplies the exact authorized destination. Confirm supported payload controls, avoid raw submission bodies where possible, then configure and test the approved route. No destination is inferred from the account login email.
+- **Alternative reviewer:** owner names the person and approved access scope before access is granted.
+
+The existing test/lead retention proposals and PHI-misdirection procedure remain ready for owner/privacy approval. No automatic retention, notification setup or new access permission has been implemented by this verification.

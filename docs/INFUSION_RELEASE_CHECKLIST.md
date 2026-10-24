@@ -10,12 +10,13 @@ This matrix supersedes unchecked items in historical sections below. The later s
 | --- | --- | --- |
 | Website implementation | Six infusion routes and existing site integration; no additional major feature identified for informational release | COMPLETE |
 | Employer-based staffing documentation | Corrected working model: AC employs/supplies nurses; client payroll employment is not required | CORRECTED; no legal clearance implied |
-| Latest website QA | Commit `9504887`, workflow [40080815306](https://github.com/davidekissinger/advantageclinicians/actions/runs/40080815306): static and browser jobs successful; 57 browser checks, 12 accessibility scans, zero failures | PASS; documentation-only correction to receive its own CI |
-| Form registration and historical receipt | Oct 24 connector inventory: partner and RN forms each retain one recorded submission, Home/Ohio fields and separate identities | VERIFIED |
-| Current protected preview and real POST redirect | Netlify browser session is signed out; authenticate before testing latest preview and submitting fabricated non-patient data | BLOCKED BY SIGN-IN |
-| Notifications and access | Connector does not expose team membership, notification configuration or payloads; inspect signed-in dashboard | UNVERIFIED |
+| Latest website QA | Website commit `9504887`: 57 browser checks, 12 accessibility scans, zero failures. Documentation correction `5c28a36`, workflow [40082057569](https://github.com/davidekissinger/advantageclinicians/actions/runs/40082057569): static and browser jobs successful | PASS; see current PR CI for later documentation-only evidence commit |
+| Form registration and historical receipt | Oct 24 connector inventory after live preview tests: partner and RN forms each have two recorded submissions; Home/Ohio fields and separate identities preserved | VERIFIED |
+| Current protected preview and real POST redirect | Authenticated preview `6adc7a20bc196545b7af4823` for `5c28a36` is ready. Both fabricated non-patient submissions redirected to `/specialty-infusion-nursing/thank-you/` and were recorded | PASS |
+| Notifications and access | Signed-in dashboard: no submission notifications configured; one team member and zero reviewers. No settings or membership changed | VERIFIED CURRENT STATE; owner must select intake workflow |
 | Intake/privacy operating choices | Assign owner/backup/privacy responder; approve retention, access/export and incident procedure | OWNER DECISION / IMPLEMENTATION |
 | Public claims / service arrangement | Final wording and actual employer/provider arrangement reviewed; applicable legal/compliance decision recorded | OPEN |
+| Deployment capacity | Netlify dashboard reports production deploys paused by team credit/plan limits; existing published sites remain live. No purchase or plan change made | EXTERNAL BLOCKER; owner action |
 | Production | Connector reports published deploy `6aaeea9896f1429124d585ea`; no merge or production publish performed | UNCHANGED |
 
 ## Verification record — 2026-10-23
@@ -99,3 +100,15 @@ Detailed evidence: `docs/INFUSION_RELEASE_READINESS.md`. Operating proposal: `do
 ## October 24 model review — release remains blocked
 
 See [Ohio model comparison](INFUSION_OHIO_MODEL_COMPARISON.md) for verified statutory requirements, proposed responsibility allocation, exact draft copy, intake controls and approval evidence. The working business model is Advantage Clinicians employing nurses and supplying staffing to an identified, clinically accountable client provider. Client payroll employment is not a prerequisite. Recruitment/direct placement remains an optional alternative. Confirm the actual contracts, allocation of clinical responsibilities and applicable operating authority before fulfillment; the website remains business/RN interest intake only. This clarification does not record legal clearance or production release approval.
+
+## Live preview verification — October 24, 2026
+
+- Authenticated to Netlify through its existing sign-in flow; confirmed preview `6adc7a20bc196545b7af4823`, commit `5c28a36220c934bf4c20c434bb3bb24b480b3d06`, is ready and not published to production.
+- Partner form: used a clearly labeled fictional QA organization/contact and reserved example-domain email; no patient data. Real browser POST reached the generic thank-you page. Netlify receipt timestamp: `2026-10-24T09:31:34.526Z`; count increased from 1 to 2.
+- RN form: used a clearly labeled fictional QA nurse and reserved example-domain email, selected eligibility requiring review, and supplied no real license data. Real browser POST reached the same generic thank-you page. Netlify receipt timestamp: `2026-10-24T09:32:19.228Z`; count increased from 1 to 2.
+- Generic success pages did not echo submitted values. Preview tools briefly interfered with automated checkbox interaction; direct browser interaction set both consent fields and both submissions completed. No website defect was established.
+- Submission-notification settings showed no configured notifications. Email delivery cannot be claimed; select dashboard-only review or configure and test a specifically approved notification destination.
+- Team membership inventory showed a single owner member and no reviewers. This verifies membership, not a complete audit of sessions, integrations, exports or account security. No access changes were made.
+- Production deploy remains `6aaeea9896f1429124d585ea`. Netlify reports a team-level production-deploy pause; resolving billing/credit capacity is separate from code readiness and requires the owner. No spending, upgrade, auto-recharge or production deployment was performed.
+
+Remaining decisions: intake owner/backup/privacy responder; dashboard vs notification workflow; retention and misdirected-data procedure; exact public claims and applicable staffing/provider review; production capacity and explicit release authorization.
