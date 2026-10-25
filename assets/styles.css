@@ -17,3 +17,90 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:700px){.container{width:min(100% - 28px,1220px)}.header-inner{min-height:74px}.logo img{width:230px}.nav{top:74px}.hero{padding:34px 0 0;background:#fff}.hero-grid{gap:12px}.hero-title .line{white-space:normal}.hero-copy{padding-bottom:32px}.brand-media img{width:100%}.eyebrow{margin-bottom:14px}.lead{font-size:1.04rem}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.proof-grid,.audience-grid,.split,.pillars,.cards,.steps,.bullet-grid,.field-grid,.footer-grid{grid-template-columns:1fr}.proof-item{border-right:0!important;border-bottom:1px solid var(--border)}.proof-item:last-child{border-bottom:0}.section{padding:54px 0}.audience-card{padding:28px;min-height:auto}.contact-graphic{gap:30px}.plus-mark{font-size:6rem}.script-words{font-size:1.65rem}.footer-grid>div:first-child{grid-column:auto}.footer-bottom{flex-direction:column}.legal-links{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .section-dark{background:linear-gradient(135deg,var(--navy),#0A527D);color:#fff}.section-dark h2,.section-dark h3,.section-dark .lead{color:#fff}.panel.navy{background:#fff;border:1px solid var(--border);border-left:5px solid var(--navy);box-shadow:0 7px 20px rgba(11,58,120,.05)}.panel.teal{background:#fff;border:1px solid var(--border);border-left:5px solid var(--teal);box-shadow:0 7px 20px rgba(11,58,120,.05)}.panel.navy h2,.panel.navy h3,.panel.teal h2,.panel.teal h3{color:var(--navy)}.panel.navy p,.panel.teal p{color:var(--slate)}
+
+/* Specialty Infusion Nursing v1 — scoped, additive styles */
+.infusion-site{--infusion-ink:#0b2c55}
+.infusion-hero{background:linear-gradient(118deg,#f7fbfd 0%,#eef8fa 62%,#e5f5f5 100%);padding:25px 0 70px;overflow:hidden}
+.infusion-hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:44px}
+.infusion-hero-content{padding:38px 0}.infusion-hero h1{font-size:clamp(2.4rem,4.1vw,4rem);line-height:1.09;letter-spacing:-.038em}
+.infusion-hero .lead{font-size:1.11rem}.infusion-quiet{font-size:.88rem;color:var(--slate);margin-top:18px}
+.infusion-breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:15px 0 20px;color:var(--slate);font-size:.9rem}
+.infusion-breadcrumb a{text-decoration:none;color:var(--navy);font-weight:700}.infusion-breadcrumb a:hover{text-decoration:underline}
+.infusion-hero-art{min-height:440px;border-radius:24px;background:radial-gradient(circle at 60% 42%,#91dbe0 0%,#c4ebed 36%,#eaf8f8 68%,#edf7f9 100%);position:relative;border:1px solid #c1e7e9;box-shadow:var(--shadow);overflow:hidden}
+.infusion-hero-art:before,.infusion-hero-art:after{content:"";position:absolute;width:420px;height:420px;top:10px;left:10%;border:2px solid rgba(11,58,120,.12);border-radius:50%}.infusion-hero-art:after{width:300px;height:300px;top:70px;left:22%;border-color:rgba(11,58,120,.1)}
+.infusion-art-orbit{position:absolute;inset:0;display:grid;place-items:center}
+.infusion-art-core{position:relative;z-index:1;width:230px;height:230px;border-radius:50%;background:linear-gradient(140deg,#0b3a78,#076f90);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;color:#fff;box-shadow:0 17px 36px rgba(11,58,120,.25)}
+.infusion-art-core span{font-family:Montserrat,sans-serif;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:#b9f1f0}.infusion-art-core strong{font-family:Montserrat,sans-serif;font-size:1.65rem;line-height:1.16;margin-top:12px}
+.infusion-art-icon{position:absolute;font-size:9rem;font-weight:800;color:rgba(255,255,255,.4);top:-45px;right:14px}
+.infusion-art-node{display:flex;gap:12px;align-items:center;position:absolute;z-index:2;background:#fff;padding:14px 18px;box-shadow:0 11px 23px rgba(11,58,120,.11);border-radius:14px;border:1px solid #daeaef}
+.infusion-node-a{top:35px;left:24px}.infusion-node-b{right:22px;bottom:35px}
+.infusion-art-node strong,.infusion-art-node small{display:block}.infusion-art-node strong{font-family:Montserrat,sans-serif;font-size:.9rem;color:var(--navy)}.infusion-art-node small{color:var(--slate);font-size:.78rem}
+.infusion-node-symbol{display:grid;place-items:center;border-radius:12px;width:38px;height:38px;background:var(--mist);color:var(--navy);font-size:1.25rem}
+.infusion-audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.infusion-audience-card{position:relative;display:block;text-decoration:none;background:#fff;border:1px solid var(--border);border-top:5px solid var(--navy);border-radius:14px;padding:38px;box-shadow:0 10px 26px rgba(11,58,120,.06);transition:box-shadow .2s,transform .2s}
+.infusion-audience-card.clinician{border-top-color:var(--teal)}.infusion-audience-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.infusion-card-label{font:800 .72rem Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#067e9a}
+.infusion-audience-card h3{font-size:1.62rem;max-width:390px;margin:22px 0 14px;line-height:1.22}.infusion-audience-card p{color:var(--slate);max-width:450px}.infusion-card-link{display:block;font:700 .95rem Montserrat,sans-serif;color:var(--navy);margin-top:25px}
+.infusion-card-symbol{display:grid;place-items:center;width:48px;height:48px;background:var(--mist);color:var(--navy);border-radius:50%;font-size:1.4rem;margin-top:24px}
+.infusion-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.infusion-steps article{padding:30px;background:#fff;border:1px solid var(--border);border-radius:12px}
+.infusion-step-number{display:block;font:800 1.7rem Montserrat,sans-serif;color:#068c9f;margin-bottom:20px}.infusion-steps h3{line-height:1.23}.infusion-steps p{color:var(--slate)}
+.infusion-feature-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px}
+.infusion-feature-grid>div>p:not(.lead){color:var(--slate);margin-top:17px}
+.infusion-feature-panel{padding:32px 38px;background:#eaf4f7;border:1px solid #d0e8ec;border-radius:14px}
+.infusion-feature-panel strong{display:block;font:800 1.15rem Montserrat,sans-serif;color:var(--navy);line-height:1.35}
+.infusion-feature-panel ul{list-style:none;padding:0;margin:20px 0 0}.infusion-feature-panel li{position:relative;padding:12px 0 12px 27px;color:var(--slate);border-top:1px solid #cee4e9}
+.infusion-feature-panel li:before{content:"✓";position:absolute;left:0;color:#078fa6;font-weight:800}
+.infusion-faq{max-width:950px;margin:0 auto 30px;display:grid;gap:12px}.infusion-faq details{background:#fff;padding:0 24px;border:1px solid var(--border);border-radius:10px}
+.infusion-faq summary{cursor:pointer;padding:20px 0;font-family:Montserrat,sans-serif;font-weight:700;color:var(--navy)}
+.infusion-faq details p{margin:0 0 22px;color:var(--slate)}
+.infusion-safety{padding:20px 22px;background:#fff8e4;border-left:4px solid #d7a83c;border-radius:4px;color:#624e1e;font-size:.96rem;line-height:1.6;margin:28px 0 0}.infusion-safety strong{font-family:Montserrat,sans-serif}
+.infusion-on-dark{border-color:#fff!important;color:#fff!important;background:transparent!important}
+.infusion-subhero{padding:25px 0 68px;background:linear-gradient(100deg,#f7fbfe 0%,#eef8fa 100%);border-bottom:1px solid #d5e6ed}
+.infusion-subhero h1{max-width:960px;font-size:clamp(2.5rem,4.1vw,4rem);line-height:1.1}
+.infusion-subhero .lead{max-width:880px}
+.infusion-clinician-hero{background:linear-gradient(100deg,#f7fcfc,#eaf9f8)}
+.infusion-service-cards{grid-template-columns:repeat(2,1fr)}
+.infusion-service-cards .card{border-radius:12px;min-height:190px}.infusion-service-cards .icon-circle{font-size:1rem}
+.infusion-conversion{display:flex;gap:30px;justify-content:space-between;align-items:center;background:#eef8fa;padding:36px 42px;border:1px solid #d1e8ef;border-radius:14px}
+.infusion-conversion h2{font-size:clamp(1.8rem,2.7vw,2.6rem)}.infusion-conversion p{max-width:630px;color:var(--slate)}
+.infusion-discovery-strip{border-top:1px solid #d7edf0;border-bottom:1px solid #d7edf0;background:linear-gradient(100deg,#f2fafb,#eaf4f7);padding:37px 0}
+.infusion-discovery-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.infusion-discovery-inner h2{font-size:clamp(1.7rem,2.5vw,2.4rem)}.infusion-discovery-inner p{max-width:740px;color:var(--slate);margin-bottom:0}
+.infusion-secondary-feature{background:#f7fbfc}.infusion-secondary-feature .infusion-feature-panel{background:#fff}
+.infusion-form-hero{padding-bottom:50px}.infusion-form-layout{display:grid;grid-template-columns:.73fr 1.27fr;gap:34px;align-items:start}
+.infusion-form-intro{position:sticky;top:120px}.infusion-form-intro h2{font-size:clamp(1.7rem,2.5vw,2.3rem)}
+.infusion-form-intro>p{color:var(--slate)}.infusion-tip{margin-top:22px;border-top:3px solid var(--teal);background:#fff;padding:25px;border-radius:8px}
+.infusion-tip strong{font-family:Montserrat,sans-serif;color:var(--navy)}.infusion-tip p{margin-bottom:0;color:var(--slate)}
+.infusion-form{border-radius:13px;box-shadow:0 15px 32px rgba(11,58,120,.09);padding:36px}
+.infusion-form h2{font-size:1.55rem;line-height:1.25;margin:0 0 8px}
+.infusion-form .infusion-form-subhead{font-size:1.35rem;border-top:1px solid var(--border);margin:22px 0 20px;padding-top:25px}
+.infusion-form-desc{color:var(--slate);margin:0 0 22px}
+.infusion-form .field-grid{gap:16px}.infusion-form .field{margin-bottom:19px}
+.infusion-form .field label{font-size:.86rem}.infusion-form input,.infusion-form select,.infusion-form textarea{min-height:46px}
+.infusion-field-help{display:block;font-size:.85rem;color:var(--slate);margin-top:4px}
+.infusion-optional{font-size:.78rem;color:var(--slate);font-weight:500}
+.infusion-fieldset{border:1px solid var(--border);border-radius:8px;padding:18px;margin:10px 0 22px;min-width:0}
+.infusion-fieldset legend{font-family:Montserrat,sans-serif;font-size:.85rem;font-weight:700;color:var(--navy);padding:0 6px}
+.infusion-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:12px}
+.infusion-check,.infusion-consent{display:flex;align-items:flex-start;gap:11px;cursor:pointer;font:500 .94rem 'Source Sans 3',sans-serif;color:var(--ink)}
+.infusion-check input,.infusion-consent input{width:18px;height:18px;min-height:18px;margin:3px 0 0;flex:0 0 18px;accent-color:#087e98}
+.infusion-consent{border:1px solid var(--border);background:#f2f9fb;border-radius:10px;padding:17px;margin-top:15px;font-size:.93rem}
+.infusion-privacy{font-size:.87rem;color:var(--slate)}.infusion-privacy a{font-weight:700;color:var(--navy)}
+.infusion-submit{margin-top:6px;cursor:pointer}.infusion-thanks{min-height:60vh;padding-top:70px}
+@media(max-width:1050px){.infusion-hero-grid,.infusion-feature-grid,.infusion-form-layout{grid-template-columns:1fr}.infusion-hero-art{min-height:390px}.infusion-form-intro{position:static}}
+@media(max-width:700px){.infusion-hero{padding-bottom:35px}.infusion-hero-content{padding:10px 0}.infusion-hero-art{min-height:315px}.infusion-art-core{width:175px;height:175px}.infusion-art-core strong{font-size:1.18rem}.infusion-art-node{padding:9px}.infusion-node-a{top:15px;left:10px}.infusion-node-b{bottom:15px;right:10px}.infusion-audience-grid,.infusion-steps,.infusion-check-grid,.infusion-service-cards{grid-template-columns:1fr}.infusion-audience-card{padding:26px}.infusion-feature-panel{padding:25px}.infusion-conversion,.infusion-discovery-inner{display:block}.infusion-conversion{padding:28px}.infusion-discovery-inner .btn,.infusion-conversion .btn{margin-top:17px;width:100%}.infusion-form{padding:23px}.infusion-subhero{padding-bottom:42px}.infusion-form .field-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.infusion-audience-card{transition:none!important}}
+
+/* Release review: contrast and focus improvements for the infusion service line */
+.infusion-site .eyebrow {color:#065d72}
+.infusion-site .infusion-card-label {color:#06677e}
+.infusion-site .infusion-step-number {color:#056a80}
+.infusion-site .infusion-optional {color:#475e73}
+.infusion-site summary:focus-visible,.infusion-audience-card:focus-visible {
+  outline:3px solid #085d83;outline-offset:4px;
+}
+.infusion-site .infusion-faq details[open] summary {margin-bottom:2px}
+@media (max-width:700px) {
+  .infusion-site .infusion-faq details {padding:0 16px}
+}
