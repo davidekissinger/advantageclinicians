@@ -67,6 +67,19 @@ try {
     for (const route of ["/", ...infusionRoutes]) {
       try {
         await page.goto(base + route, { waitUntil: "domcontentloaded" });
+        await page.evaluate(() => document.fonts.ready);
+        if (route === "/") {
+          const headingFits = await page.locator(".hero-title").evaluate(heading => {
+            const column = heading.closest(".hero-copy").getBoundingClientRect();
+            return [...heading.querySelectorAll(".line")].every(line => {
+              const range = document.createRange();
+              range.selectNodeContents(line);
+              return [...range.getClientRects()].every(rect =>
+                rect.left >= column.left - 1 && rect.right <= column.right + 1);
+            });
+          });
+          assert(headingFits, "Hero heading text extends outside its column");
+        }
         const dimensions = await page.evaluate(() => ({
           innerWidth: window.innerWidth,
           docWidth: document.documentElement.scrollWidth,
