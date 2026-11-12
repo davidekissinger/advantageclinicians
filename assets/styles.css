@@ -197,3 +197,6 @@ footer .footer-cta{background:#d9f5f6;border-color:#d9f5f6}
 /* Contrast corrections for text on the homepage's pale panels. */
 .essence .eyebrow,.section-mist > .container > .section-title > .eyebrow,.home-values .section-title .eyebrow,.home-contact .eyebrow{color:#06677e}
 .essence-quote span{color:#087f92}
+
+/* Keep every hero line inside its column, including desktop. */
+.hero-title .line{white-space:normal;overflow-wrap:anywhere}
