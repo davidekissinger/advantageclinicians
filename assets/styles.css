@@ -180,3 +180,16 @@ footer .footer-cta{background:#d9f5f6;border-color:#d9f5f6}
 .home-contact-form .btn{width:100%;cursor:pointer}.home-contact-form textarea{min-height:115px}
 @media(max-width:1050px){.home-contact-grid{gap:30px}}
 @media(max-width:700px){.home-contact-grid{grid-template-columns:1fr}.home-contact-form{padding:24px}.home-contact::before{font-size:6rem;right:8px}.home-contact-copy{padding-bottom:10px}}
+
+/* Focused responsive fixes following production review. */
+.hero-grid > *{min-width:0}
+@media(max-width:700px){
+  .essence{gap:28px}
+  .section:has(> .container.essence),.section:has(> .container > .steps){padding:42px 0}
+  .section .steps{gap:16px}
+  .section .steps .step{padding:24px}
+}
+@media(max-width:360px){
+  .hero-title{font-size:2.5rem}
+  .hero-title .line{overflow-wrap:anywhere}
+}

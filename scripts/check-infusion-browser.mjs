@@ -23,7 +23,7 @@ const routes = [
   "/terms/"
 ];
 const infusionRoutes = routes.filter(route => route.startsWith("/specialty-infusion-nursing/"));
-const widths = [360, 390, 768, 1024, 1440];
+const widths = [320, 360, 390, 768, 1024, 1440];
 const report = { checks: [], failures: [], accessibility: [], screenshots: [] };
 const fail = (title, detail) => report.failures.push({ title, detail: String(detail) });
 const server = spawn("python3", ["-m", "http.server", "8765", "--bind", "127.0.0.1"], {
@@ -64,7 +64,7 @@ try {
   // Responsive overflow tests across major breakpoints, with screenshot evidence.
   for (const width of widths) {
     await page.setViewportSize({ width, height: width < 500 ? 840 : 950 });
-    for (const route of infusionRoutes) {
+    for (const route of ["/", ...infusionRoutes]) {
       try {
         await page.goto(base + route, { waitUntil: "domcontentloaded" });
         const dimensions = await page.evaluate(() => ({
@@ -88,6 +88,16 @@ try {
         }
       } catch (error) { fail("responsive " + width + "px " + route, error); }
     }
+  }
+
+  // Honeypots remain in form data but must not be visible or focusable.
+  for (const route of ["/", "/contact/", "/specialty-infusion-nursing/request-coverage/", "/specialty-infusion-nursing/join-network/"]) {
+    await page.goto(base + route);
+    const trap = page.locator('input[name="bot-field"]');
+    assert.equal(await trap.isVisible(), false, "Honeypot must be hidden: " + route);
+    assert.equal(await trap.evaluate(el => el.tabIndex), -1, "Honeypot must be excluded from tab order");
+    assert.equal(await trap.evaluate(el => new FormData(el.form).get("bot-field")), "", "Honeypot must remain in submitted form data");
+    report.checks.push("Hidden honeypot retained in form data: " + route);
   }
 
   // Mobile navigation must become keyboard/touch operable at small viewports.
@@ -162,7 +172,7 @@ try {
   // WCAG A/AA automated audits for new pages on phone and desktop.
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 950 });
-    for (const route of infusionRoutes) {
+    for (const route of ["/", ...infusionRoutes]) {
       try {
         await page.goto(base + route, { waitUntil: "domcontentloaded" });
         const result = await new AxeBuilder({ page })
