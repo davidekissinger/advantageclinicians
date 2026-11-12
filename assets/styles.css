@@ -193,3 +193,7 @@ footer .footer-cta{background:#d9f5f6;border-color:#d9f5f6}
   .hero-title{font-size:2.5rem}
   .hero-title .line{overflow-wrap:anywhere}
 }
+
+/* Contrast corrections for text on the homepage's pale panels. */
+.essence .eyebrow,.section-mist > .container > .section-title > .eyebrow,.home-values .section-title .eyebrow,.home-contact .eyebrow{color:#06677e}
+.essence-quote span{color:#087f92}
